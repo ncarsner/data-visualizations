@@ -1,9 +1,13 @@
+folium
+geopandas
 jupyterlab
 matplotlib
 numpy
 pandas
 pillow
 plotly
+pyproj
 pytest
 scipy
+shapely
 seaborn
