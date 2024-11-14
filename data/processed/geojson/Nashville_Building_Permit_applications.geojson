@@ -1,0 +1,3405 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7967671199932,
+                    36.1340142103088
+                ]
+            },
+            "properties": {
+                "Permit__": "2023023374",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "10412024600",
+                "Date_Entered": "Tue, 11 Apr 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1916 18TH AVE S",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 77 BELMONT PARK COMPANY ADDN",
+                "Contact": "MAKER CONSTRUCTION LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4302991,
+                "Purpose": "Addition and outbuilding construction    must comply with hcn2022068323",
+                "Council_Dist": 18,
+                "Lon": -86.79676712,
+                "Lat": 36.13401421,
+                "ObjectId": 1,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7945394597854,
+                    36.1251972202529
+                ]
+            },
+            "properties": {
+                "Permit__": "D2020047607",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "11704002200",
+                "Date_Entered": "Tue, 24 Oct 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 100000,
+                "Address": "2509 BELMONT BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 2 BELMONT LAND CO.'S PLAN RESUB OF PT LT 181 & 182",
+                "Contact": "SITEWORKS LLC",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 3856896,
+                "Purpose": "Proposed 13' x 32' Swimming Pool in rear yard.",
+                "Council_Dist": 18,
+                "Lon": -86.79453945999998,
+                "Lat": 36.12519722,
+                "ObjectId": 2,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6332457997799,
+                    36.228955230199
+                ]
+            },
+            "properties": {
+                "Permit__": "D2020068970",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "06308004200",
+                "Date_Entered": "Thu, 02 Feb 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 105,
+                "Address": "4004 UNIVERSITY AVE",
+                "City": "OLD HICKORY",
+                "State": "TN",
+                "Subdivision_Lot": "LOTS 9 11 13 15 17 BLK X HADLEY BEND CITY",
+                "Contact": "MUSIC CITY HANDYMEN LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 3891358,
+                "Purpose": "adding a 6' wide by 17.5' deep, single story addition to an existing house.",
+                "Council_Dist": 11,
+                "Lon": -86.63324579999998,
+                "Lat": 36.22895523,
+                "ObjectId": 3,
+                "ZIP": "37138"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7008825500591,
+                    36.2741763102616
+                ]
+            },
+            "properties": {
+                "Permit__": "D2020080590",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "043060A01600CO",
+                "Date_Entered": "Mon, 29 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 439773,
+                "Address": "713 ELLIE DR",
+                "City": "MADISON",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 16 AMQUI PLACE SECTION TWO",
+                "Contact": "K & J Associates",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 3910196,
+                "Purpose": "Construct new home on lot 15 of Amqui Place, on Ellie Drive. must comply with tree regulations one new two inch tree for every 30' road frontage. for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835. 1781 sf living area. 20' min front s/b; 5' mi side s/b; 20' min rear s/b.",
+                "Council_Dist": 9,
+                "Lon": -86.70088255,
+                "Lat": 36.27417631,
+                "ObjectId": 4,
+                "ZIP": "37115"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.749684869952,
+                    36.0458862102302
+                ]
+            },
+            "properties": {
+                "Permit__": "D2021026275",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "16109004000",
+                "Date_Entered": "Fri, 02 Aug 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 318761,
+                "Address": "5500 THALMAN DR",
+                "City": "BRENTWOOD",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 14 GRANBERRY HEIGHTS SEC. 4 & PT OF RESERVE PAR",
+                "Contact": "SCRUGGS, E C & SONS",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 3974584,
+                "Purpose": "5500 Thalman Drive",
+                "Council_Dist": 26,
+                "Lon": -86.74968486999998,
+                "Lat": 36.04588621,
+                "ObjectId": 5,
+                "ZIP": "37027"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6398551697541,
+                    36.1950483697137
+                ]
+            },
+            "properties": {
+                "Permit__": "D2021076710",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "074160A07500CO",
+                "Date_Entered": "Tue, 30 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 358918,
+                "Address": "6149 BINNS LN",
+                "City": "HERMITAGE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 75 PARKHAVEN COMMUNITIES PH 1",
+                "Contact": "CRAIGHEAD DEVELOPMENT",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4064957,
+                "Purpose": "*****PLANNING NOT TO REVIEW INDIVID. PERMITS********CONSTRUCT 2713SF SINGLE FAMILY RESIDENCE WITH 714SF GARAGE, 231SF UNFINISHED SPACE AND 297SF PORCH . PRIOR TO U&O, DEVELOPER TO PROVIDE THIRD PARTY ENGINEER CERTIFICATION OF COMPLIANCE WITH ALL APPLICABLE CONDITIONS OF SPECIFIC PLAN 2016SP-046-001/BL2016-408 AND APPROVED FINAL SITE PLAN 2016SP-046-002. NOT TO BE OVER ANY EASEMENTS. PURSUANT # 2006-1263 METRO CODE OF LAWS, I (HOLDER OF PERMIT) HEREBY CERTIFY THAT ALL CONSTRUCTION & DEMOLITION WASTE GENERATED BY ANY & ALL ACTIVITIES GOVERNED BY THIS PERMIT SHALL BE DISPOSED OF IN AN APPROVED LANDFILL. FURTHER, I CERTIFY THAT NO CONSTRUCTION & DEMOLITION WASTE SHALL BE STORED ON THE PROPERTY IN VIOLATION OF ANY PROVISION OF METRO CODE.; FOR EVERY 30 FEET OF STREET FRONTAGE, OR FRACTION THEREOF, ONE 2 INCH CALIPER TREE AS LISTED IN THE URBAN FORESTRY APPROVED TREE LIST SHALL BE PLANTED ON THE SUBJECT PROPERTY. FOR EVERY 50 FEET OF SITE FRONTAGE, A DOUBLE-SIDED SIGN 24\u201d X 36\u201d IN SIZE MUST BE POSTED IN ENGLISH AND SPANISH THAT CONTAINS...............NEW INSTALL",
+                "Council_Dist": 14,
+                "Lon": -86.63985517,
+                "Lat": 36.19504837,
+                "ObjectId": 6,
+                "ZIP": "37076"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6151028296171,
+                    36.0533004099619
+                ]
+            },
+            "properties": {
+                "Permit__": "D2021082367",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Retail, Department / Retail Stores",
+                "Parcel": "16400031600",
+                "Date_Entered": "Wed, 29 Dec 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 877171,
+                "Address": "3532 MURFREESBORO PIKE",
+                "City": "ANTIOCH",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 5 MT. VIEW MARKETPLACE REVISION",
+                "Contact": "WIMCO Corp",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAF20M001",
+                "IVR_Trk_": 4073424,
+                "Purpose": "REJECTED: INCORRECT PERMIT TYPE, CACR PERMIT TYPE REQUIRED. MUST INITIATE NEW PERMIT APPLICATION ONLINE WITH PROPER APPLICATION TYPE (CACR).      Interior deli remodel of Publix Supermarket",
+                "Council_Dist": 8,
+                "Lon": -86.61510283,
+                "Lat": 36.05330041,
+                "ObjectId": 7,
+                "ZIP": "37013"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.798949129615,
+                    36.1696587101731
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022000259",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Multifamily, Tri-Plex, Quad, Apartments",
+                "Parcel": "08116049000",
+                "Date_Entered": "Mon, 03 Jan 2022 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1206 PHILLIPS ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 41 PT 40 HARDING PLAN",
+                "Contact": "HUFFINE FIRST SERVICE",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA03R398",
+                "IVR_Trk_": 4075803,
+                "Purpose": "Cosmetic renovations and window replacements on the entire building.",
+                "Council_Dist": 21,
+                "Lon": -86.79894912999998,
+                "Lat": 36.16965871,
+                "ObjectId": 8,
+                "ZIP": "37208"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7122318303244,
+                    36.1928512099874
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022009281",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07216027500",
+                "Date_Entered": "Thu, 10 Feb 2022 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1503 DUGGER DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 41 DUGGER HGTS",
+                "Contact": "Bonham Builders LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4080432,
+                "Purpose": "REJECTED FOR THE FOLLOWING REASONS: APPLICANT HAS NOT PROVIDED STAMPED SITE PLAN AND CONTEXTUAL SURVEY PLAN TO DETERMINE FRONT SETBACK. EMAIL DIRECTLY TO: THOMAS.CORCORAN@NASHVILLE.GOV. PERMIT APPLICATION NUMBER MUST BE IN SUBJECT LINE TO PROCESS.      To construct a single family residence HPR at 1503 Dugger Drive. Total heated square footage is 2694 Square foot unheated is front porch 52 sqft, Back porch 150 sqft , garage at 379 sqft totaling 3,275 sqft  under roof.   must provide a sign stating the companies name and phone number for the accepted times to work during the week. must comply with the tree ordinance to add a 2 caliper tree for every 30 feet of road frontage.",
+                "Council_Dist": 7,
+                "Lon": -86.71223182999998,
+                "Lat": 36.19285121,
+                "ObjectId": 9,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.57893864964,
+                    36.1802220202618
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022012278",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "087100A03700CO",
+                "Date_Entered": "Wed, 23 Feb 2022 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 109000,
+                "Address": "501 KEMP DR",
+                "City": "HERMITAGE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 137 AARONS CRESS PHASE 1B",
+                "Contact": "Sundaze Pool And Spa",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 4094239,
+                "Purpose": "Building a 16x32 pool with 7x7 round spa in yard",
+                "Council_Dist": 12,
+                "Lon": -86.57893865,
+                "Lat": 36.18022202,
+                "ObjectId": 10,
+                "ZIP": "37076"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8237169198767,
+                    36.1458769501652
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022013918",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "10401047600",
+                "Date_Entered": "Fri, 15 Jul 2022 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 252228,
+                "Address": "411 MCADOO AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 94 WEST END PARK TERRACE",
+                "Contact": "ART BUILDING INC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4104662,
+                "Purpose": "The parent parcel number is 10401047600, is zone code OV-IMP, contains 0.07 Acres. Proposed horizontal property line regime with 2,228 Square Feet of living area, 284 SF attached garage,58 SF of front porch area, 122 SF of exterior deck area. 32.9\u2019 min. front s/b, 3\u2019 min. side s/b and 20\u2019 min rear s/b, must comply with tree regulations one new 2\u201d tree for every 30\u2019 of road frontage, for every 50\u2019 of site frontage, a 24\u201dx36\u201d sign must be placed in English and Spanish with information in regard to metro council 2017-835. Must comply with metro council bills 2014-725 and 2014-770. max allowed height is 45' three floors max. min required distance between structures is 6' min with no bump outs.",
+                "Council_Dist": 24,
+                "Lon": -86.82371691999998,
+                "Lat": 36.14587695,
+                "ObjectId": 11,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7120772895528,
+                    36.1934312803135
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022016573",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07216027200",
+                "Date_Entered": "Mon, 14 Mar 2022 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 452529,
+                "Address": "1509 DUGGER DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 44 DUGGER HGTS",
+                "Contact": "Gill design & Construction",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4114547,
+                "Purpose": "PERMIT APPLICATION CANCELLED:  APPLICATION D2022016573 INCOMPLETE   MUST HAVE CORRECT PARCEL NUMBER  MUST INCLUDE CONTEXTUAL SURVEY STAMPED BY RLS  MUST INCLUDE SITE PLAN STAMPED BY RLS  MUST INCLUDE FRONT ELEVATION WITH GARADES/HEIGHT STAMPED BY RLS  NEW PERMIT APPLICATION MUST BE INITIATED BY APPLICANT    Build from Ground up New construction home 2559 SF",
+                "Council_Dist": 7,
+                "Lon": -86.71207728999998,
+                "Lat": 36.19343128,
+                "ObjectId": 12,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7120772895528,
+                    36.1934312803135
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022016579",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07216027200",
+                "Date_Entered": "Wed, 16 Mar 2022 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 756616,
+                "Address": "1509 DUGGER DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 44 DUGGER HGTS",
+                "Contact": "Gill design & Construction",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4114609,
+                "Purpose": "PERMIT APPLICATION CANCELLED:  APPLICATION D2022016579 INCOMPLETE   MUST HAVE CORRECT PARCEL NUMBER  MUST INCLUDE CONTEXTUAL SURVEY STAMPED BY RLS  MUST INCLUDE SITE PLAN STAMPED BY RLS  MUST INCLUDE FRONT ELEVATION WITH GARADES/HEIGHT STAMPED BY RLS  NEW PERMIT APPLICATION MUST BE INITIATED BY APPLICANT    Build single family new Construction from the ground up. 2529SF",
+                "Council_Dist": 7,
+                "Lon": -86.71207728999998,
+                "Lat": 36.19343128,
+                "ObjectId": 13,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7779824095612,
+                    36.1608834800213
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022019946",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Bar Or Nightclub, Tavern And Bars",
+                "Parcel": "09306307600",
+                "Date_Entered": "Thu, 24 Mar 2022 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 3000000,
+                "Address": "416 B BROADWAY",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 81 ORIGINAL TOWN OF NASHVILLE",
+                "Contact": "IKON Construction",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAF06A204",
+                "IVR_Trk_": 4125059,
+                "Purpose": "Interior renovation of the existing first floor and mezzanine level. Extensive interior renovation of the second floor which includes structural steel framework and new floor system. New steel structure and interior build-out of a new third floor. Third floor addition includes a private roof top patio seating area. Addition to the rear of the facility mainly to incorporate a new elevator. Minor modification and or replacement of the existing exterior windows.",
+                "Council_Dist": 19,
+                "Lon": -86.77798241,
+                "Lat": 36.16088348,
+                "ObjectId": 14,
+                "ZIP": "37203"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8138656701792,
+                    36.1555181699098
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022055011",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Commercial",
+                "Parcel": "09210038300",
+                "Date_Entered": "Fri, 12 Aug 2022 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 200000,
+                "Address": "2500 CHARLOTTE AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1 MEDICAL MART RESUB LOT 1",
+                "Contact": "Thomas Johnson",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A002",
+                "IVR_Trk_": 4192869,
+                "Purpose": "na",
+                "Council_Dist": 21,
+                "Lon": -86.81386567,
+                "Lat": 36.15551817,
+                "ObjectId": 15,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8273332901738,
+                    36.1178081396409
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023002915",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "11705004800",
+                "Date_Entered": "Fri, 20 Jan 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "3602 HAMPTON AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 32 PT 33 HENRY SPERRY",
+                "Contact": "Alpha-Omega Remodeling",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4247077,
+                "Purpose": "Kitchen remodel ",
+                "Council_Dist": 24,
+                "Lon": -86.82733329,
+                "Lat": 36.11780814,
+                "ObjectId": 16,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.685058560141,
+                    36.2185786396975
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023006962",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "06215000700",
+                "Date_Entered": "Wed, 01 Feb 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 225000,
+                "Address": "2605 LISHWOOD DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 126 SEC 3 SUTHERLAND HGTS",
+                "Contact": "BUILD GROUP LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4258763,
+                "Purpose": "Full Gut of house down to the studs. We are replacing every aspect of this house except the HVAC equipment and exterior cladding. All other components of this house will be replaced.  no increase to building footprint.  remains single family residence.  only one kitchen allowed in residence.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 15,
+                "Lon": -86.68505856,
+                "Lat": 36.21857864,
+                "ObjectId": 17,
+                "ZIP": "37214"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8811143204079,
+                    36.0901307901788
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023014026",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "12912005600",
+                "Date_Entered": "Fri, 03 Mar 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 35984,
+                "Address": "1001 PERCY WARNER BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 252 SEC 1 WARNER PARK VALLEY",
+                "Contact": "BRODERICK BUILDERS INC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4279927,
+                "Purpose": "To construct a 744 sq ft carport addition to the south side of the existing single-family residence, per plan.     THE HOLDER OF THIS PERMIT HEREBY CERTIFIES THAT ALL CONSTRUCTION AND DEMOLITION WASTE WILL BE DISPOSED IN AN APPROVED LANDFILL. THE HOLDER OF THIS PERMIT ALSO CERTIFIES THAT NO CONSTRUCTION OR DEMOLITION WASTE SHALL BE STORED ON THE PROPERTY IN VIOLATION OF ANY PROVISIONS OF THE METROPOLITAN CODE.    FOR EVERY 50 FEET OF SITE FRONTAGE, A DOUBLE-SIDED SIGN 24\u201d X 36\u201d IN SIZE MUST BE POSTED IN ENGLISH AND SPANISH THAT CONTAINS THE INFORMATION REQUIRED BY ORDINANCE NO. 2017-835. NO MORE THAN THREE SIGNS ARE REQUIRED.",
+                "Council_Dist": 23,
+                "Lon": -86.88111431999998,
+                "Lat": 36.09013079,
+                "ObjectId": 18,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.9257564398121,
+                    36.0879214002364
+                ]
+            },
+            "properties": {
+                "Permit__": "D2022005259",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "072164Z00100CO",
+                "Date_Entered": "Tue, 25 Jan 2022 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 348983,
+                "Address": "0 UNKNOWN",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT A HOMES AT 1527 HAYDEN DRIVE",
+                "Contact": "Jackson Builders",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4083208,
+                "Purpose": "REJECTED FOR THE FOLLOWING REASONS: APPLICANT HAS NOT PROVIDED STAMPED SITE PLAN  AND CONTEXTUAL SURVEY PLAN TO DETERMINE FRONT SETBACK.  EMAIL DIRECTLY TO: THOMAS.CORCORAN@NASHVILLE.GOV. PERMIT APPLICATION NUMBER MUST BE IN SUBJECT LINE TO PROCESS.    To construct ...Unit A\u2026 of HPR attached duplex with 2643sf heated and cooled and 245sf porches/decks and 345sf of garage. units detached. max allowed height is 45' three floors max. 36.7' min front s/b; must comply with tree regulations one new two inch tree for every 30' road frontage. for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 7,
+                "Lon": -86.92575644,
+                "Lat": 36.0879214,
+                "ObjectId": 19,
+                "ZIP": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 20,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8130760995535,
+                    36.1684831602118
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023027056",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Multifamily, Tri-Plex, Quad, Apartments",
+                "Parcel": "09203002900",
+                "Date_Entered": "Tue, 25 Apr 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "2405 E JEFFERSON ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT. LOT 22 HOLMAN RESUB. CLARK.",
+                "Contact": "ViViD1 Builders, LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA03R398",
+                "IVR_Trk_": 4311444,
+                "Purpose": "Permit not required by zoning    The work for this permit is for the Common Area, which includes an irrigation system.",
+                "Council_Dist": 21,
+                "Lon": -86.8130761,
+                "Lat": 36.16848316,
+                "ObjectId": 20,
+                "ZIP": "37208"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.721786159871,
+                    36.22628325025
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023029429",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Residential",
+                "Parcel": "06108020400",
+                "Date_Entered": "Thu, 04 May 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 20000,
+                "Address": "1130 WINDING WAY",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 11 SEC 1 BLK C JACKSON PARK",
+                "Contact": "LESUEUR CONSTRUCTION CO",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A001",
+                "IVR_Trk_": 4318467,
+                "Purpose": "Demo existing home in need of much repairs sitting on 2 lots to build new residence.  not to be burned on lot.  RS10 Zoning.  MHZC MUST REVIEW APPLICATION.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 7,
+                "Lon": -86.72178615999998,
+                "Lat": 36.22628325,
+                "ObjectId": 21,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.569995189758,
+                    36.1488959098797
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023033242",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "110020C01000CO",
+                "Date_Entered": "Fri, 19 May 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 2943,
+                "Address": "879 ASHTON PARK WAY",
+                "City": "MOUNT JULIET",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 10 ASHTON PARK PH 1",
+                "Contact": "DREES PREMIER HOMES INC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4326168,
+                "Purpose": "Ashton Park lot 10.  To build a two story home for new construction with 2223 sq ft living space and 448 sq ft garage and 142 sq ft covered porch and 130 sq ft uncovered deck",
+                "Council_Dist": 12,
+                "Lon": -86.56999519,
+                "Lat": 36.14889591,
+                "ObjectId": 22,
+                "ZIP": "37122"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8741716503104,
+                    36.1601198000699
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023069676",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "09008023600",
+                "Date_Entered": "Tue, 19 Sep 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 358468,
+                "Address": "738 CROLEY DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 65 SEC 1 MOSS WOOD SUB",
+                "Contact": "SUMMIT BUILDERS CORP",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4384764,
+                "Purpose": "To construct a 2730.5SF single-family residence with 529SF garage and 80SF porch. 5' min. side setbacks, 20' min. rear setback. front setback at ' per average. Not to be over any easements or setbacks. I certify that all construction & demolition waste generated by any & all activities governed by this permit shall be disposed of in an approved landfill. Also, I certify that no construction & demolition waste will be stored on the property in violation of any provision of the Metro Code.",
+                "Council_Dist": 20,
+                "Lon": -86.87417164999998,
+                "Lat": 36.1601198,
+                "ObjectId": 23,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7622517501095,
+                    36.1852637101861
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023073148",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "08208000300",
+                "Date_Entered": "Wed, 27 Sep 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 7272,
+                "Address": "816 N 6TH ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 52 J B HAYNIES MILLERS ADDN",
+                "Contact": "MLS CONSTRUCTION LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4389874,
+                "Purpose": "Pulling building permit on front property so that we can do a service upgrade from 100 to 200 amps.  SP Zoning.  remains single family residence.  no increase to building footprint.  only one electric meter allowed for this residence.  only one kitchen allowed in residence.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 5,
+                "Lon": -86.76225175,
+                "Lat": 36.18526371,
+                "ObjectId": 24,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.742963269856,
+                    36.1173452299654
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023077192",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "11905025100",
+                "Date_Entered": "Tue, 10 Oct 2023 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 30000,
+                "Address": "2510 D FOSTER AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 174 RESUB 3-4-5 & 6 CUMBERLAND NURSERIES",
+                "Contact": "FOUND REAL ESTATE, LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4396057,
+                "Purpose": "Update existing with new cabinets, flooring, windows, tile and hvac. ",
+                "Council_Dist": 16,
+                "Lon": -86.74296327,
+                "Lat": 36.11734523,
+                "ObjectId": 25,
+                "ZIP": "37210"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.679781830111,
+                    36.2640985098809
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023090397",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "04312004000",
+                "Date_Entered": "Thu, 16 Nov 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "131 EAGAN CIR",
+                "City": "MADISON",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 38 BLK B MYATT-EAGAN SUB",
+                "Contact": "KIPU CONSTRUCTION LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4415652,
+                "Purpose": "new build ",
+                "Council_Dist": 9,
+                "Lon": -86.67978182999998,
+                "Lat": 36.26409851,
+                "ObjectId": 26,
+                "ZIP": "37115"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 27,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8093278799288,
+                    36.122447229772
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023093267",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "11703010000",
+                "Date_Entered": "Mon, 27 Nov 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "2709 SHARONDALE CT",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 8 HILLSBORO CIRCLE",
+                "Contact": "HUFFINE FIRST SERVICE",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4419684,
+                "Purpose": "Project scope incomplete, Site plan and floor plans required, please submit to zoninghelpdesk@nashville.gov so a review can be scheduled.  Make sure that you provide the permit number in the subject line.    ADDITIONS TO RESIDENCE",
+                "Council_Dist": 24,
+                "Lon": -86.80932788,
+                "Lat": 36.12244723,
+                "ObjectId": 27,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 28,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.645168639981,
+                    35.9928698700056
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023093160",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "18700000600",
+                "Date_Entered": "Mon, 27 Nov 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "6636 B BURKITT RD",
+                "City": "ANTIOCH",
+                "State": "TN",
+                "Subdivision_Lot": "N SIDE BURKETT RD E OF WHITTEMORE LN TRACT 5 & 6",
+                "Contact": "Dream Acres Pool Company",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 4419561,
+                "Purpose": "SITE PLAN, PROOF OF POOL ALARM PURCHASE AND COST REQUIRED.    TO INSTALL [DIMENSIONS REQUIRED] INGROUND POOL TO REAR OF EXISTING RESIDENCE \u2026 \u202610\u2019 MINIMUM SIDE SETBACK\u2026 \u202610\u2019 MINIMUM REAR SETBACK\u2026 \u2026NOT TO INSTALL OVER OR OBSTRUCT ANY EASEMENTS\u2026 \u2026AS OF JANUARY 1, 2011, THE TENNESSEE GENERAL ASSEMBLY REQUIRES THAT ALL RESIDENTIAL POOLS/ HOT TUBS GREATER THAN 36  IN DEPTH SHALL INSTALL A POOL ALARM BEFORE USING OR MAKING AVAILABLE FOR USE A SWIMMING POOL\u2026 \u2026MUST COMPLY WITH APPLICABLE FENCING CODES/REQUIREMENTS\u2026 \u2026",
+                "Council_Dist": 33,
+                "Lon": -86.64516863999998,
+                "Lat": 35.99286987,
+                "ObjectId": 28,
+                "ZIP": "37013"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 29,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8374538898278,
+                    36.096934780172
+                ]
+            },
+            "properties": {
+                "Permit__": "D2023095926",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Garage",
+                "Parcel": "13008004700",
+                "Date_Entered": "Tue, 05 Dec 2023 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 184596,
+                "Address": "4327 B SNEED RD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 11 BELLE MEADE ANNEX ALSO PT LOT 9 COMPTONWOOD",
+                "Contact": "Music City Renovations & Construction, LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U009",
+                "IVR_Trk_": 4423374,
+                "Purpose": "To construct a new, 1-story, 2-car garage (739 SF +/-). Construction of the new garage and apron are to be per architectural plans, provided by Owner (see attachment). The property setbacks and zoning variance on shown on attached architectural and surveyor drawings & plans. Electrical services to be added per required building codes. Property to remain a single family residence.  Owner has selected to not pursue interior renovations at this time.",
+                "Council_Dist": 34,
+                "Lon": -86.83745389,
+                "Lat": 36.09693478,
+                "ObjectId": 29,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7673528298571,
+                    36.2044669199551
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024017651",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07107017200",
+                "Date_Entered": "Tue, 19 Mar 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 2904,
+                "Address": "1717 LUTON ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 14 RESUB LUTONS ADDITION",
+                "Contact": "X5 CONSTRUCTION LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4462651,
+                "Purpose": "To construct one detached HPR - 1717 B Luton St.  2326 SF single family residence (HPR) with 578Sf attached garage.  5' min. side setback, 6' min distance from Unit A and 20' min. rear setback, not to be over any easements. unit detached. maximum allowed height is 45' three floors maximum. minimum required distance between structures is 6' minimum with no bump outs. ***PURSUANT TO ORDINANCE NO 2008-1263 of the Metropolitan Code of Laws, I , holder of this permit, hereby certify that all construction and demolition waste generated by any and all activities governed by this permit shall be disposed of in an approved landfill. Further, I certify that no construction or demolition waste shall be stored on the property in violation of any provisions of the Metropolitan Code* For every 30 feet of street frontage, or fraction thereof, one 2 inch caliper tree as listed in the Urban Forestry approved tree list shall be planted on the subject property.* For every 50 feet of site frontage, a double-sided sign 24\u201d x 36\u201d in size must be posted in English and Spanish that contains the information required by Ordinance No. 2017-835. No more than three signs are required.***. must comply fully with metro council bills 2014-725 and 2014-770.",
+                "Council_Dist": 5,
+                "Lon": -86.76735282999998,
+                "Lat": 36.20446692,
+                "ObjectId": 30,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.9622149402155,
+                    36.036519230215
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024021478",
+                "Permit_Type_Description": "Building Residential - Roofing / Siding",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "155160A09600CO",
+                "Date_Entered": "Thu, 07 Mar 2024 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "4804 TRACEWAY DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 151 TRACESIDE SEC 3",
+                "Contact": "The Contractors Group, Inc",
+                "Per_Ty": "CARK",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4474377,
+                "Purpose": "\u2022Frame a new roof structure over the deck with 6 x 6 columns, rafters, 12\u2019 overhangs around the perimeter. We will match shingles, aluminum trim and gutters as close as possible  Replace existing deck boards with composite deck boards, using existing framing.",
+                "Council_Dist": 35,
+                "Lon": -86.96221493999998,
+                "Lat": 36.03651923,
+                "ObjectId": 31,
+                "ZIP": "37221"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 32,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8233103603454,
+                    36.1611270003095
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024025699",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "09205022800",
+                "Date_Entered": "Wed, 20 Mar 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "907 31ST AVE N",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOTS 6 & 7 BLK 27 FISK UNIVERSITY",
+                "Contact": "Southern Comfort HVAC-R ELECTRICAL LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4445576,
+                "Purpose": "redo a bathroom",
+                "Council_Dist": 21,
+                "Lon": -86.82331035999998,
+                "Lat": 36.161127,
+                "ObjectId": 32,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 33,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7315257103511,
+                    36.2209579901375
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024029187",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "06111005900",
+                "Date_Entered": "Fri, 29 Mar 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "929 CURDWOOD BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1 MAPLEWOOD MANOR RESUB LOT 17 AND 18",
+                "Contact": "MAXIM HOMES LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4490903,
+                "Purpose": "To continue Renovation from CARA 2023097171 under New Construction Permit per Inspector.  Inspector requires new construction permit due to amount of new framing. No Change to scope of work. To construct 600SF 2nd story addition as well as renovations to portions of existing dwelling. no change to footprint. to remain single family. ",
+                "Council_Dist": 7,
+                "Lon": -86.73152571,
+                "Lat": 36.22095799,
+                "ObjectId": 33,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 34,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.725318229567,
+                    36.2172032501655
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024033178",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "06115017500",
+                "Date_Entered": "Wed, 10 Apr 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 50576,
+                "Address": "1122 SUNNYMEADE DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 14 BLK A SUNNYMEADE",
+                "Contact": "WIRED LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4498449,
+                "Purpose": "add 216 sq ft bathroom/closet and 309 sqft of patio to rear of house",
+                "Council_Dist": 7,
+                "Lon": -86.72531823,
+                "Lat": 36.21720325,
+                "ObjectId": 34,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 35,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6348351396047,
+                    36.2450457699744
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024036378",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Accessory Structure, Decks",
+                "Parcel": "053120B01900CO",
+                "Date_Entered": "Fri, 26 Jul 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 130,
+                "Address": "3319 OLD HICKORY BLVD 19",
+                "City": "OLD HICKORY",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT D3 OLD HICKORY TOWNHOMES",
+                "Contact": "The Covered Patio",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA14U015",
+                "IVR_Trk_": 4504367,
+                "Purpose": "10x13 Insulated Patio Cover White Insulated Panels with Black Posts, Aluminum Screen Room.",
+                "Council_Dist": 11,
+                "Lon": -86.63483514,
+                "Lat": 36.24504577,
+                "ObjectId": 35,
+                "ZIP": "37138"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 36,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7756122495998,
+                    36.1534908298022
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024033879",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Commercial",
+                "Parcel": "09310021500",
+                "Date_Entered": "Thu, 11 Apr 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 15000,
+                "Address": "600 6TH AVE S",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 130 BARROW GROVE",
+                "Contact": "PREMIER CONSTRUCTION",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A002",
+                "IVR_Trk_": 4499593,
+                "Purpose": "to demolish structure to grade.  DTC Overlay.  not to be burned on lot.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 19,
+                "Lon": -86.77561224999998,
+                "Lat": 36.15349083,
+                "ObjectId": 36,
+                "ZIP": "37203"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 37,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7699861701456,
+                    36.1851980199745
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024040378",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "08207006000",
+                "Date_Entered": "Thu, 02 May 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 200000,
+                "Address": "814 STOCKELL ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 99 DR V S LINDSLEY PLAN",
+                "Contact": "Middle Tennessee Renovation LLC.",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4511978,
+                "Purpose": "Interior renovation on a 4 bedroom 3.5 bath house. All new interior finishes. New Electrical, plumbing and HVAC.",
+                "Council_Dist": 5,
+                "Lon": -86.76998616999998,
+                "Lat": 36.18519802,
+                "ObjectId": 37,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 38,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8373336602085,
+                    36.1491104697844
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024052079",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "09116022500",
+                "Date_Entered": "Fri, 07 Jun 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "4202 NEVADA AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 103 BLK 3 CHARLOTTE PARK CO 1ST ADDN",
+                "Contact": "What\u2019s He Building?",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4531754,
+                "Purpose": "Converting a covered patio into a finished office. Space is currently attached to the main dwelling and sits under the current roof structure. No changes will be made to the current footprint or roof line. ",
+                "Council_Dist": 24,
+                "Lon": -86.83733366,
+                "Lat": 36.14911047,
+                "ObjectId": 38,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 39,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7872313101145,
+                    36.1999265598746
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024053615",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "071090A00200CO",
+                "Date_Entered": "Wed, 12 Jun 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1535 LOCK RD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT 2 LEGACY",
+                "Contact": "CONCORDIA DEVELOPMENT INC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4533342,
+                "Purpose": "Construct a 2 story 1,139 square foot single family home.",
+                "Council_Dist": 2,
+                "Lon": -86.78723130999998,
+                "Lat": 36.19992656,
+                "ObjectId": 39,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 40,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7406520402755,
+                    36.1919955003232
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024056164",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07214019900",
+                "Date_Entered": "Tue, 18 Jun 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1408 DOUGLAS AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 33 H M DOAKS",
+                "Contact": "CURBIO INC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4538290,
+                "Purpose": "A building permit is needed for structural work | replacing ridge beam | exterior wall framing",
+                "Council_Dist": 6,
+                "Lon": -86.74065204,
+                "Lat": 36.1919955,
+                "ObjectId": 40,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 41,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7792789399259,
+                    36.209032810165
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024062695",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "071020F01000CO",
+                "Date_Entered": "Sun, 27 Oct 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 481196,
+                "Address": "700 STARIA ALY",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT 10 HAMPTON COTTAGES AMENDED",
+                "Contact": "UNIQUE MANAGEMENT DEVELOPMENT & CONSTRUCTION LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4548535,
+                "Purpose": "Build a Single family 1800 st ft home",
+                "Council_Dist": 2,
+                "Lon": -86.77927894,
+                "Lat": 36.20903281,
+                "ObjectId": 41,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 42,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6717300002507,
+                    36.1833190798339
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024073259",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "08408010600",
+                "Date_Entered": "Tue, 13 Aug 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 500000,
+                "Address": "3005 WINDEMERE CIR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 142 SEC 5 LINCOYA HILLS",
+                "Contact": "Middle Tennessee Renovation LLC.",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4566408,
+                "Purpose": "Interior and exterior renovation. rewiring of the kitchen and lighting. upgraded plumbing to pex and pvc, new windows, trim, paint, doors, cabinets and light fixtures. ",
+                "Council_Dist": 15,
+                "Lon": -86.67172999999998,
+                "Lat": 36.18331908,
+                "ObjectId": 42,
+                "ZIP": "37214"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.691146800351,
+                    36.0855847298486
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024074256",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Commercial",
+                "Parcel": "13414025200",
+                "Date_Entered": "Thu, 15 Aug 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 9500,
+                "Address": "1311 ANTIOCH PIKE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1 PASCHALL PROPERTY & RESERVE PARCEL SEC 4A",
+                "Contact": "CONCORDIA DEVELOPMENT INC",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A002",
+                "IVR_Trk_": 4567932,
+                "Purpose": "Demo commercial building.  not to be burned on lot.  CS Zoning with a Corridor Design Overlay.  see attached email from NDOT indicating that NDOT does not wish to review demolition applications.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 28,
+                "Lon": -86.6911468,
+                "Lat": 36.08558473,
+                "ObjectId": 43,
+                "ZIP": "37211"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 44,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8181352504352,
+                    36.1152290798229
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024075707",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "11706009500",
+                "Date_Entered": "Tue, 20 Aug 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 520487,
+                "Address": "2308 WOODMONT BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "N SIDE WOODMONT BLVD W OF 23RD AVE SO",
+                "Contact": "BORNTRAGER HOMES INC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4570283,
+                "Purpose": "Adding two small, shed roofs over existing dormers.  Remodeling interior of home.  Plans attached.  No change to the footprint of the house.  Rs40 Zoning.  remains single family residence.  no increase to building footprint.  no increase to overall height of residence this permit.  only one kitchen allowed in residence.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 24,
+                "Lon": -86.81813524999998,
+                "Lat": 36.11522908,
+                "ObjectId": 44,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 45,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.729631870391,
+                    36.1855364397642
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024077708",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "08307004900",
+                "Date_Entered": "Tue, 10 Sep 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 1025823,
+                "Address": "808 POWERS AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 19 SUB R E POWERS LANDS",
+                "Contact": "MIGHTY OAK BUILDERS LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4573860,
+                "Purpose": "New construction project in Historic Overlay. Affordable Housing Priority Review letter attached.",
+                "Council_Dist": 6,
+                "Lon": -86.72963187,
+                "Lat": 36.18553644,
+                "ObjectId": 45,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6473993796136,
+                    36.0119165801004
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024085974",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "182020A16200CO",
+                "Date_Entered": "Mon, 23 Sep 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "704 BRODY CT",
+                "City": "ANTIOCH",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 162 PARKS AT CANE RIDGE PH 1B",
+                "Contact": "Meritage Homes",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4588294,
+                "Purpose": "New Single Family construction - Total sq footage 2883 - 1st fl 1420; 2nd fl 864; Garage 426; Porch/Patio 173. This community is a RS-10 - NO plan review required.",
+                "Council_Dist": 33,
+                "Lon": -86.64739937999998,
+                "Lat": 36.01191658,
+                "ObjectId": 46,
+                "ZIP": "37013"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 47,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.9001758502881,
+                    36.1063437198893
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024093201",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "11514002400",
+                "Date_Entered": "Wed, 16 Oct 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "514 NEILWOOD DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 719 SEC 7 WEST MEADE FARMS",
+                "Contact": "AWP CONSTRUCTION LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4599498,
+                "Purpose": "Remove right side of house and proceed with renovations accordingly. ",
+                "Council_Dist": 23,
+                "Lon": -86.90017584999998,
+                "Lat": 36.10634372,
+                "ObjectId": 47,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7584473399655,
+                    36.2020854203564
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024094256",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Residential",
+                "Parcel": "07112032400",
+                "Date_Entered": "Mon, 21 Oct 2024 05:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 10000,
+                "Address": "1526 JONES AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 36 JOYWOOD SUB",
+                "Contact": "CHRISP COMPANIES LLC",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A001",
+                "IVR_Trk_": 4601913,
+                "Purpose": "Demolish residential property in order to construction new single family construction house.  RS5 Zoning.  not to be burned on lot.  see attached email from NDOT dated June 13, 2024 indicating that NDOT does not wish to review demolition applications.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 5,
+                "Lon": -86.75844734,
+                "Lat": 36.20208542,
+                "ObjectId": 48,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 49,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8357852898488,
+                    36.1369616603347
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024098309",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "10308023600",
+                "Date_Entered": "Thu, 07 Nov 2024 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 135000,
+                "Address": "3917 CAMBRIDGE AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 14 BLK H CHEROKEE PARK",
+                "Contact": "BEVEL LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4608181,
+                "Purpose": "Add front porch and an approximately 24' x 18' rear addition with a 3rd bedroom, laundry closet, 1/2 bathroom and bonus room. MHZC must review application. remains single family residence. front porch not coming any closer to the street than existing residence. only one kitchen allowed in residence. for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 24,
+                "Lon": -86.83578529,
+                "Lat": 36.13696166,
+                "ObjectId": 49,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 50,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8804355902102,
+                    36.1541534700405
+                ]
+            },
+            "properties": {
+                "Permit__": "D2024099527",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "090120F00100CO",
+                "Date_Entered": "Tue, 05 Nov 2024 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "6306 A HENRY FORD DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT A HOMES AT 6306 HENRY FORD DRIVE",
+                "Contact": "MCH CONSTRUCTION OF TN LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4609634,
+                "Purpose": "fas",
+                "Council_Dist": 20,
+                "Lon": -86.88043559,
+                "Lat": 36.15415347,
+                "ObjectId": 50,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7399955002619,
+                    36.1733040103024
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072339",
+                "Permit_Type_Description": "Building Sign Permit",
+                "Permit_Subtype_Description": "Sign - Ground /  Wall Signs",
+                "Parcel": "08314011400",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 1275,
+                "Address": "1629 FATHERLAND ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 59 LINDSLEY SUB CHADWELL",
+                "Contact": "Paul Hoffman",
+                "Per_Ty": "CASN",
+                "Per_SubTy": "CAZ02A001",
+                "IVR_Trk_": 4058390,
+                "Purpose": "To erect a non-illuminated hanging ground sign. Size to be 6sqft.",
+                "Council_Dist": 6,
+                "Lon": -86.7399955,
+                "Lat": 36.17330401,
+                "ObjectId": 51,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 52,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8209759102132,
+                    36.1165412102803
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021050778",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "11706007900",
+                "Date_Entered": "Wed, 15 Dec 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 180000,
+                "Address": "3429 B HAMPTON AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "S SIDE HAMPTON AVE W OF 23RD AVE SO",
+                "Contact": "ABSOLUTE POOLS LLC",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 4025067,
+                "Purpose": "Absolute Pools will build and in-ground gunite swimming pool and spa.",
+                "Council_Dist": 24,
+                "Lon": -86.82097591,
+                "Lat": 36.11654121,
+                "ObjectId": 52,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 53,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8516519200985,
+                    36.1555338998462
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072356",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "091113A00100CO",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 275700,
+                "Address": "5298 GEORGIA AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT A HOMES AT 5300 GEORGIA AVENUE",
+                "Contact": "L & S CONSTRUCTION SERVICES",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4058406,
+                "Purpose": "to build a 2274 sf house.  UNIT A HPR.  units detached.  max allowed height is 32'7 .  min required distance between structures is 6' min with no bump outs.  34.3' min front s/b; 5' min side s/b; 20' min rear s/b.  must comply with tree regulations one new two inch tree for every 30' road frontage.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.  must comply fully with metro council bills 2014-725 and 2014-770.  DUPLEX ELIGIBLE PARCEL PER NOTES IN COMMENTS SECTION ON PARENT PARCEL 91-11 PARCEL 191 BY LM ON 5/5/2021 APPROVED PER ZONING ADMINISTRATOR IN CONCURRANCE WITH CM OF DISTRICT.",
+                "Council_Dist": 20,
+                "Lon": -86.85165191999998,
+                "Lat": 36.1555339,
+                "ObjectId": 53,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 54,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8517419797989,
+                    36.1555257102993
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072361",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "091113A00200CO",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 300190,
+                "Address": "5300 GEORGIA AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT B HOMES AT 5300 GEORGIA AVENUE",
+                "Contact": "L & S CONSTRUCTION SERVICES",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4058414,
+                "Purpose": "to build a 2476 sf unit B of proposed HPR.  units detached. max allowed height is 32'7 .  min required distance between structures is 6' min with no bump outs.  34.3' min front s/b; 5' min side s/b; 20' min rear s/b.  must comply with tree regulations one new two inch tree for every 30' road frontage.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.  must comply fully with metro council bills 2014-725 and 2014-770.  DUPLEX ELIGIBLE LOT PER NOTES ON COMMENTS SCREEN ON PARENT PARCEL 91-11 PARCEL 191 BY LM PER ZONING ADMINISTRATOR IN CONCURRANCE WITH CM OF THIS DISTRICT ON 5/5/2021.",
+                "Council_Dist": 20,
+                "Lon": -86.85174198,
+                "Lat": 36.15552571,
+                "ObjectId": 54,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 55,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8578551895805,
+                    36.1419590402532
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072400",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "103024C00100CO",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "249 WHITE BRIDGE PIKE 1",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT 1 HOMES AT 247-249 WHITE BRIDGE PIKE",
+                "Contact": "DEREK WILSON",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4058492,
+                "Purpose": "master permit no construction this permit  3 buildings containing 14 units  POC DEREK WILSON",
+                "Council_Dist": 20,
+                "Lon": -86.85785518999998,
+                "Lat": 36.14195904,
+                "ObjectId": 55,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 56,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.882857689863,
+                    36.1319888697071
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072416",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "10212003000",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 583064,
+                "Address": "836 BROOK HOLLOW RD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 227 SEC A HORTON HGTS",
+                "Contact": "BUILD NASHVILLE LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4058513,
+                "Purpose": "TO CONSTRUCT 4,458SF SINGLE FAMILY RESIDENCE WITH 878SF GARAGE AND 885SF PORCHES. FRONT S/B 125' PER PLAT; 15' SIDE SETBACKS; 20' MIN. REAR SETBACK. LOT COVERAGE 4,510SF OF MAX 10,983SF. NOT TO BE OVER ANY EASEMENTS. ***PURSUANT TO ORDINANCE NO 2008-1263 OF THE METROPOLITAN CODE OF LAWS, I , HOLDER OF THIS PERMIT, HEREBY CERTIFY THAT ALL CONSTRUCTION AND DEMOLITION WASTE GENERATED BY ANY AND ALL ACTIVITIES GOVERNED BY THIS PERMIT SHALL BE DISPOSED OF IN AN APPROVED LANDFILL. FURTHER, I CERTIFY THAT NO CONSTRUCTION OR DEMOLITION WASTE SHALL BE STORED ON THE PROPERTY IN VIOLATION OF ANY PROVISIONS OF THE METROPOLITAN CODE* FOR EVERY 30 FEET OF STREET FRONTAGE, OR FRACTION THEREOF, ONE 2 INCH CALIPER TREE AS LISTED IN THE URBAN FORESTRY APPROVED TREE LIST SHALL BE PLANTED ON THE SUBJECT PROPERTY.* FOR EVERY 50 FEET OF SITE FRONTAGE, A DOUBLE-SIDED SIGN 24\u201d X 36\u201d IN SIZE MUST BE POSTED IN ENGLISH AND SPANISH THAT CONTAINS THE INFORMATION REQUIRED BY ORDINANCE NO. 2017-835. NO MORE THAN THREE SIGNS ARE REQUIRED.***",
+                "Council_Dist": 23,
+                "Lon": -86.88285768999998,
+                "Lat": 36.13198887,
+                "ObjectId": 56,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6464270799811,
+                    36.0854009702991
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072536",
+                "Permit_Type_Description": "Building Commercial - New",
+                "Permit_Subtype_Description": "Retail, Department / Retail Stores",
+                "Parcel": "13500043700",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 603264,
+                "Address": "2318 MURFREESBORO PIKE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 3 NASHBORO SQUARE RESUB LOT 3",
+                "Contact": "BAILEY WHITE",
+                "Per_Ty": "CACN",
+                "Per_SubTy": "CAF20M001",
+                "IVR_Trk_": 4058713,
+                "Purpose": "To construct a new 4,800 sf one story building including interior buildout for retail use.  POC BAILEY WHITE",
+                "Council_Dist": 29,
+                "Lon": -86.64642707999998,
+                "Lat": 36.08540097,
+                "ObjectId": 57,
+                "ZIP": "37217"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 58,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7950250198577,
+                    36.1270880498407
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072801",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "10416028800",
+                "Date_Entered": "Thu, 11 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 75000,
+                "Address": "2400 B OAKLAND AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 170 BELMONT LAND CO",
+                "Contact": "LAYTON HOMES 2 LLC",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 4059037,
+                "Purpose": "To install inground swimming pool at side and rear of existing single family residence. 10\u2019 MINIMUM STREET/SIDE SETBACK\u2026 \u20263\u2019 MINIMUM REAR SETBACK\u2026 \u2026NOT TO INSTALL OVER OR OBSTRUCT ANY EASEMENTS\u2026 \u2026AS OF JANUARY 1, 2011, THE TENNESSEE GENERAL ASSEMBLY REQUIRES THAT ALL RESIDENTIAL POOLS/ HOT TUBS GREATER THAN 36  IN DEPTH SHALL INSTALL A POOL ALARM BEFORE USING OR MAKING AVAILABLE FOR USE A SWIMMING POOL\u2026 \u2026MUST COMPLY WITH APPLICABLE FENCING CODES/REQUIREMENTS\u2026 \u2026",
+                "Council_Dist": 18,
+                "Lon": -86.79502501999998,
+                "Lat": 36.12708805,
+                "ObjectId": 58,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 59,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7117120803724,
+                    36.2368555001168
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073122",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "05213003500",
+                "Date_Entered": "Fri, 12 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 49919,
+                "Address": "2517 MIAMI AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1 C. L. BLACKWELL RESUB",
+                "Contact": "PUNCHLIST NASHVILLE, LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4059473,
+                "Purpose": "Remodel interior portion to include: sand/stain floors, paint, paint cabinetry, updating tile and light fixtures  no change to footprint, to remain single family.",
+                "Council_Dist": 15,
+                "Lon": -86.71171208,
+                "Lat": 36.2368555,
+                "ObjectId": 59,
+                "ZIP": "37214"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 60,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.74261525982,
+                    36.1850548501853
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073077",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Master Permit Application",
+                "Parcel": "08305035600",
+                "Date_Entered": "Fri, 12 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 66224,
+                "Address": "1417 B FRANKLIN AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 50 WEAKLEY HOME PLACE",
+                "Contact": "Njh Pool Construction",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAZ03A001",
+                "IVR_Trk_": 4059413,
+                "Purpose": "To install 10 x 16 inground fiberglass pool ",
+                "Council_Dist": 6,
+                "Lon": -86.74261525999998,
+                "Lat": 36.18505485,
+                "ObjectId": 60,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 61,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8233239599405,
+                    36.1584379799438
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073146",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "09205032700",
+                "Date_Entered": "Sat, 13 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 276592,
+                "Address": "3124 TORBETT ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 6 WILLS SUB BARROW",
+                "Contact": "E3 CONSTRUCTION SERVICES, LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4059507,
+                "Purpose": "Construct 2074 SF single family residence with 440 SF attached garage and 161 SF porches. 3' side setback, 20' min. rear setback, front setback at 20' per table. Not to be over any easements. max height 3 stories and 45'.Pursuant # 2006-1263 Metro Code of Laws, I (holder of permit) hereby certify that all construction & demolition waste generated by any & all activities governed by this permit shall be disposed of in an approved landfill. Further, I certify that no construction & demolition waste shall be stored on the property in violation of any provision of Metro Code. For every 30 feet of street frontage, or fraction thereof, one 2 inch caliper tree as listed in the Urban Forestry approved tree list shall be planted on the subject property. For every 50 feet of site frontage, a double-sided sign 24\u201d x 36\u201d in size must be posted in English and Spanish that contains the information required by Ordinance No. 2017-835. No more than three signs are required.",
+                "Council_Dist": 21,
+                "Lon": -86.82332395999998,
+                "Lat": 36.15843798,
+                "ObjectId": 61,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 62,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7027871401582,
+                    36.2823137002659
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073370",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "03413023800",
+                "Date_Entered": "Mon, 15 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 34917,
+                "Address": "246 EDGEMEADE DR",
+                "City": "MADISON",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 19 RESUB EDGEMEADE FARM",
+                "Contact": "JAYROC O.C. LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4059784,
+                "Purpose": "to construct 12'x24' addition off rear of existing single family residence. Adding a master bedroom suite, changing electrical, and opening floor plan. 5' minimum side setback, 20' minimum rear setback. No second kitchen, to remain single family residence. Not to build over or obstruct easements.",
+                "Council_Dist": 9,
+                "Lon": -86.70278714,
+                "Lat": 36.2823137,
+                "ObjectId": 62,
+                "ZIP": "37115"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 63,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.671140770103,
+                    36.2442292799551
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073377",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "05309002300",
+                "Date_Entered": "Mon, 15 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1246 APACHE LN",
+                "City": "MADISON",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 4 SEQUOIA VALLEY BOULEVARD",
+                "Contact": "JAYROC O.C. LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4059792,
+                "Purpose": "Rejected: require site plan showing addition location to residence with dimensions and setbacks labeled. Provide construction cost.  EMAIL DIRECTLY TO: THOMAS.CORCORAN@NASHVILLE.GOV. PERMIT APPLICATION NUMBER MUST BE IN SUBJECT LINE TO PROCESS.    Adding a master bedroom suite and opening up the original  floor plan",
+                "Council_Dist": 9,
+                "Lon": -86.67114076999998,
+                "Lat": 36.24422928,
+                "ObjectId": 63,
+                "ZIP": "37115"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 64,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8327447100043,
+                    36.1924119198437
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073386",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "07013005500",
+                "Date_Entered": "Mon, 22 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 227307,
+                "Address": "1917 S HAMILTON RD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 4 BLK 1 SHEEGOG SUB",
+                "Contact": "DON HARDIN GROUP, LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4059797,
+                "Purpose": "REJECTED: incorrect permit application.  Resubmit Master permit application, must have site plan attached.    This application is for 6 Townhouse units on (1) site.",
+                "Council_Dist": 1,
+                "Lon": -86.83274471,
+                "Lat": 36.19241192,
+                "ObjectId": 64,
+                "ZIP": "37218"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 65,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8004076603614,
+                    36.1137002596504
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073436",
+                "Permit_Type_Description": "Building Commercial - New",
+                "Permit_Subtype_Description": "Leasing / Sales Office, Other",
+                "Parcel": "11712000900",
+                "Date_Entered": "Mon, 15 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "3411 BELMONT BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOTS 6 &  29 NOELS WATKINS GROVE",
+                "Contact": "SKANSKA USA BUILDING INC",
+                "Per_Ty": "CACN",
+                "Per_SubTy": "CAD03B000",
+                "IVR_Trk_": 4059871,
+                "Purpose": "Construction trailer for proposed office building.  POC Sam Till 423-767-0950",
+                "Council_Dist": 25,
+                "Lon": -86.80040766,
+                "Lat": 36.11370026,
+                "ObjectId": 65,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 66,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8233184900987,
+                    36.0800957498169
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073680",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "14501002100",
+                "Date_Entered": "Tue, 16 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 138945,
+                "Address": "4704 B STUART GLEN DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 5  STUART GLEN SUB SEC 2",
+                "Contact": "Anthony & Sylvan Pools",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 4060203,
+                "Purpose": "REJECTED; MUST APPLY FOR PERMIT WITH CITY OF FOREST HILLS      Anthony & Sylvan Pools are applying for a permit to build a new in ground pool consisting of the following specifications:    1.\t 20\u2019x40\u2019 totaling 120 pool perimeter or 800 Sq. ft. with a pool min depth of 3\u20196\u201d and a pool max depth of 6\u2019. Estimated gallons 21,537 of Fusion Salt.    2.\tEntrance of pool is four solid concrete steps and a sun shelf at 124 Sq. ft. with a water depth of 12\u201d. Deep end of pool will have a built-in swim out for existing at 20\u2019 length.  Water           features include 3\u2019 sheer descent, one pair of bubblers on sun shelf, and two gas fire bowls all to be installed. A Pool Eye Smart Pool Alarm PE20 will be installed as well.    3.\tThere will be an attached spa consisting of 24 Sq. ft. installed at the height of 24\u201d with stone veneer on both sides.    4.\tInstalling 1045 Sq. ft. of 12\u201dx24\u201d travertine in sand as decking. A retaining wing wall of 370 Sq. ft. made of concrete along with a 60\u2019 black drainage pipe to be installed for imperious area           from pool ties into ground.       5.\tAn existing 52\u201d Code Compliant Pool Fence Barrier is on property with self-latching gates to outswing from pool & lock installed at 54\u201d from ground are to be installed.  Attached to           entrance gates will be a Yard Guard YG03 gate/door water hazard alarm. Door chirp will be utilized. See line #50 of A&S Contract Agreement for purchase of gate alarm at time of contract           sale.      Details of all equipment are listed on the A&S Contract Sales Agreement.    Respectfully,      Scott Roop \u2013 GM A&S Pools",
+                "Council_Dist": 34,
+                "Lon": -86.82331849,
+                "Lat": 36.08009575,
+                "ObjectId": 66,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 67,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8328887198258,
+                    36.1925343999311
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073720",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Master Permit Application",
+                "Parcel": "07013005500",
+                "Date_Entered": "Tue, 16 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "3201 B JOHN MALLETTE DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 4 BLK 1 SHEEGOG SUB",
+                "Contact": "DON HARDIN GROUP",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAZ03A001",
+                "IVR_Trk_": 4060318,
+                "Purpose": "MASTER PERMIT ONLY\u2026 \u2026 NO CONSTRUCTION\u2026 \u2026MULTI-FAMILY SP\u2026 \u2026 6 SINGLE FAMILY RESIDENTIAL UNITS. MUST COMPLY WITH SP 2018SP-073-001.",
+                "Council_Dist": 1,
+                "Lon": -86.83288872,
+                "Lat": 36.1925344,
+                "ObjectId": 67,
+                "ZIP": "37218"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 68,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8133520099065,
+                    36.1086007599668
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073755",
+                "Permit_Type_Description": "Building Commercial - Rehab",
+                "Permit_Subtype_Description": "Restaurant (Full Service)",
+                "Parcel": "11714005500",
+                "Date_Entered": "Tue, 16 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "2120 GREEN HILLS VILLAGE DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "W/S HILLSBORO PK. & N/S ABBOTT MARTIN RD.",
+                "Contact": "JUSTIN CRANDALL",
+                "Per_Ty": "CACR",
+                "Per_SubTy": "CAF19A203",
+                "IVR_Trk_": 4060385,
+                "Purpose": "o remodel 1120 SF of commercial space, previously Juice Bar, into new 2 Pickles Caf\u00e9  POC JUSTIN CRANDALL",
+                "Council_Dist": 25,
+                "Lon": -86.81335201,
+                "Lat": 36.10860076,
+                "ObjectId": 68,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 69,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7851252602366,
+                    36.129017949638
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073858",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Accessory Structure, Decks",
+                "Parcel": "10513029500",
+                "Date_Entered": "Tue, 16 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 4902,
+                "Address": "922 LAWRENCE AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 86 WAVERLY PLACE",
+                "Contact": "MIDTOWN TN INC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA14U015",
+                "IVR_Trk_": 4060586,
+                "Purpose": "BUILDING A 13.5' X 15', 203 SF DECK IN THE BACK YARD OFF THE GARAGE AND NEXT TO THE FENCE. To be reviewed by MHZC. DECK WILL BE ZURI PVC MATERIAL AND BUILT AROUND AN EXISTING DOG POOL. SEE CAD DRAWING FOR SPECS AND  MATERIAL LIST.",
+                "Council_Dist": 17,
+                "Lon": -86.78512526,
+                "Lat": 36.12901795,
+                "ObjectId": 69,
+                "ZIP": "37204"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 70,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7306162002619,
+                    36.2061387799991
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073859",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07207008500",
+                "Date_Entered": "Tue, 16 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 28801,
+                "Address": "1233 KENMORE PL",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 89 PT 88 KENMORE PLACE",
+                "Contact": "J L LANEY JR",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4060588,
+                "Purpose": "Bedroom addition. It is a vertical addition going straight up on top of already existing space. Does not impact the footprint of house. Not an accessory apartment. To remain single family. No plumbing to be extended. Electrical only. No construction and demolition waste will be stored on the property and such waste shall be disposed of in a clean and sanitary manner by placing it in approved containers and having such waste discarded at an approved landfill. Signage must be posted pursuant to M.C.L. 16.28.230, including project information signs, which shall be posted in English and Spanish with one double-sided 24  (vertical) \u00d7 36  (horizontal) sign posted for every fifty feet of site frontage, with no more than three signs required per street frontage.",
+                "Council_Dist": 7,
+                "Lon": -86.7306162,
+                "Lat": 36.20613878,
+                "ObjectId": 70,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 71,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7442543402604,
+                    36.1965226197867
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021072596",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Garage",
+                "Parcel": "072132C00200CO",
+                "Date_Entered": "Wed, 10 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 21298,
+                "Address": "1022 B2 CAHAL AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT B 1022 CAHAL AVENUE TOWNHOMES",
+                "Contact": "Travis Gates",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U009",
+                "IVR_Trk_": 4058818,
+                "Purpose": "18 x 24 Pro Ranch Garage. Non-livable structure. Building used as garage and storage.  NOT TO BE USED FOR LIVING OR COMMERCIAL PURPOSES.  10' min rear s/b; 3' min side s/b.  UZO.  MAX ALLOWED KNEE WALL HEIGHT IS 16'.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 5,
+                "Lon": -86.74425434,
+                "Lat": 36.19652262,
+                "ObjectId": 71,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 72,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8282802896548,
+                    36.2012479999106
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073933",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Residential",
+                "Parcel": "07009000500",
+                "Date_Entered": "Wed, 17 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 3000,
+                "Address": "3208 LINCOLN AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "N SIDE LINCOLN ST W OF ALPINE AVE",
+                "Contact": "CHRISTIAN, MICHAEL J HOUSE MOVERS",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A001",
+                "IVR_Trk_": 4060724,
+                "Purpose": "to demolish existing residence.  not to be burned on lot.  for every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835.",
+                "Council_Dist": 2,
+                "Lon": -86.82828028999998,
+                "Lat": 36.201248,
+                "ObjectId": 72,
+                "ZIP": "37218"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 73,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.709680439746,
+                    36.2716853801167
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073944",
+                "Permit_Type_Description": "Building Use & Occupancy",
+                "Permit_Subtype_Description": "Master Permit Application",
+                "Parcel": "04305005700",
+                "Date_Entered": "Wed, 17 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 131202,
+                "Address": "720 GALLATIN PIKE N",
+                "City": "MADISON",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1. CHRYSLER, SUB.",
+                "Contact": "HUDSON CONSTRUCTION CO",
+                "Per_Ty": "CAUO",
+                "Per_SubTy": "CAZ03A001",
+                "IVR_Trk_": 4060743,
+                "Purpose": "Modifications to an existing United Equipment Rentals location.  Repair and replace existing perimeter chain link fence to include the addition of three motorized gates.  Replace existing pressure washer with new owner furnished pressure washer and construct housing for new pressure washer equipment.  Install new wash bay curtain system.  Minor repairs and replacement of existing concrete surfaces.",
+                "Council_Dist": 9,
+                "Lon": -86.70968044,
+                "Lat": 36.27168538,
+                "ObjectId": 73,
+                "ZIP": "37115"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 74,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7660390401608,
+                    36.2094420699235
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074106",
+                "Permit_Type_Description": "Building Commercial - Rehab",
+                "Permit_Subtype_Description": "Commercial Amusement (In), Other",
+                "Parcel": "07103010800",
+                "Date_Entered": "Wed, 17 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 25000,
+                "Address": "2407 DICKERSON PIKE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT A J B HAYNIES ORIENTAL PLAN",
+                "Contact": "marco teasley",
+                "Per_Ty": "CACR",
+                "Per_SubTy": "CAL03A999",
+                "IVR_Trk_": 4061014,
+                "Purpose": "To conduct interior renovations for new tenant: XCLUSIVE EVENT CENTER (Commercial Amusement). No change to exterior roof/building lines or footprint.  POC: Marco Teasley 615-397-6758  BB POC XCLUSIVE EVENT",
+                "Council_Dist": 5,
+                "Lon": -86.76603903999998,
+                "Lat": 36.20944207,
+                "ObjectId": 74,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 75,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6067222199561,
+                    36.012558170115
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074108",
+                "Permit_Type_Description": "Building Commercial - Addition",
+                "Permit_Subtype_Description": "Retail, Department / Retail Stores",
+                "Parcel": "18300002900",
+                "Date_Entered": "Wed, 17 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 2250000,
+                "Address": "1525 J P HENNESSY DR",
+                "City": "LAVERGNE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 211 INTERCHANGE CITY INDUSTRIAL PARK LOTS 1 & 211",
+                "Contact": "DAVID CURTZE",
+                "Per_Ty": "CACA",
+                "Per_SubTy": "CAF20M001",
+                "IVR_Trk_": 4061018,
+                "Purpose": "Renovation and Expansion to existing facility.  Two additions.  An 11,000 sf Shop to the North and a 2,988 SF Parts addition to the West.  Interior rest room update and reconfigured. Paint, new floors, new lighting.  Add new conference room inside existing space and office space.  POC DAVID CRUTZE, 615-390-5258.",
+                "Council_Dist": 32,
+                "Lon": -86.60672221999998,
+                "Lat": 36.01255817,
+                "ObjectId": 75,
+                "ZIP": "37086"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 76,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7756331399217,
+                    36.2324555798146
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074297",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Shed / Storage Bldg",
+                "Parcel": "06002021400",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 4637,
+                "Address": "3015 CARTERWOOD CT",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 195 SEC 1 PARKWOOD EST",
+                "Contact": "SELF CONTRACTOR RESIDENTIAL (SEE APPLICANT INFORMATION)",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U011",
+                "IVR_Trk_": 4061357,
+                "Purpose": "to install a 12 x 16 detached storage building to the rear of residence replacing existing storage shed.  not to be used for living or commercial purposes.  max allowed height is 16'.  10' min rear s/b per easement on sub plat.  3' min side s/b.",
+                "Council_Dist": 3,
+                "Lon": -86.77563313999998,
+                "Lat": 36.23245558,
+                "ObjectId": 76,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 77,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7413739300311,
+                    36.2040999801858
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074311",
+                "Permit_Type_Description": "Building Commercial - New",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "072063S00100CO",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 2015,
+                "Address": "1057 A E TRINITY LN",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT 1057A HOMES AT 1057 E TRINITY LANE",
+                "Contact": "ART BUILDING INC",
+                "Per_Ty": "CACN",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4061372,
+                "Purpose": "The parent parcel number is 072063S90000CO, is zone code MUL-A, contains 7,235 Sq. Ft.. this permit is to construct Unit A of proposed horizontal property line regime with 2,015 Square Feet of living area, 380 SF attached garage and a 29 SF front covered porch. 5\u2019 min. front s/b, 5\u2019 min. side s/b and 20\u2019 min rear s/b, must comply with tree regulations one new 2\u201d tree for every 30\u2019 of road frontage, for every 50\u2019 of site frontage, a 24\u201dx36\u201d sign must be placed in English and Spanish with information in regards to metro council 2017-835. Must comply with metro council bills 2014-725 and 2014-770. max allowed height is 45' three floors max. min required distance between structures is 6' min with no bump outs.",
+                "Council_Dist": 5,
+                "Lon": -86.74137392999998,
+                "Lat": 36.20409998,
+                "ObjectId": 77,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 78,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6575024198987,
+                    36.0891235301125
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074323",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Shed / Storage Bldg",
+                "Parcel": "135100C08000CO",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 10626,
+                "Address": "3105 DEERCREEK TRL S",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 74 RANSOM PARK SEC 4",
+                "Contact": "HERNANDEZ, ELMER & MARIA DE LA PAZ",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U011",
+                "IVR_Trk_": 4061400,
+                "Purpose": "REJECTED: DOES NOT APPEAR TO MEET SETBACK REQUIREMENTS PER DOCUMENTS AVAILABLE. REQUIRE STAMPED LAND SURVEY/SITE PLAN SHOWING PAVILLION WITH DIMENSIONS AND SETBACKS LABELED.    FOR 440 SQFT L-SHAPED PAVILLION LOCATED TO REAR OF EXISTING SINGLE FAMILY RESIDENCE\u2026 \u20263\u2019 MINIMUM SIDE\u2026 \u20263\u2019 MINIMUM REAR SETBACK\u2026 \u2026MAXIMUM HEIGHT 16\u2019 TO PEAK\u2026 \u2026NOT TO BE USED AS LIVING SPACE\u2026 \u2026NOT TO BUILD OVER OR OBSTRUCT ANY EASEMENTS ON PROPERTY\u2026 \u2026    APPLICANT ACKNOWLEDGES THAT APPLYING FOR THIS SELF-BUILDING PERMIT FOR MY PRIMARY RESIDENCE IN MY OWN NAME, I WILL ACT AS MY OWN CONTRACTOR ACCEPTING FULL RESPONSIBILITY FOR CODE COMPLIANCE, FOR HIRING & EMPLOYING INDIVIDUALS & HAVE ULTIMATE RESPONSIBILITY FOR MY OWN WORK & FOR THE WORK OF OTHERS. ACTING AS MY OWN GENERAL CONTRACTOR, I FURTHER UNDERSTAND THAT I MAY FORFEIT CERTAIN PROTECTIONS, WHICH MIGHT BE AVAILABLE TO ME THROUGH THE STATE OF TENN. GENERAL CONTRACTOR\u2019S LICENSING PROCESS. I FURTHER ACKNOWLEDGE THAT AS A SELF-BUILDING PERMIT HOLDER I AM RESPONSIBLE FOR REQUESTING ALL REQUIRED INSPECTIONS & COMPLETING ALL AUTHORIZED WORK IN COMPLIANCE WITH APPLICABLE ADOPTED CODES. I FURTHER UNDERSTAND THAT SEPARATE PERMITS ARE REQUIRED FOR ANY PROPOSED ELECTRICAL, PLUMBING, & GAS/MECHANICAL WORK AND IS NOT PART OF THIS BUILDING PERMIT\u2026",
+                "Council_Dist": 28,
+                "Lon": -86.65750242,
+                "Lat": 36.08912353,
+                "ObjectId": 78,
+                "ZIP": "37217"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 79,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8043593699575,
+                    36.1305934899143
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074391",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Duplex",
+                "Parcel": "10415017400",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 100000,
+                "Address": "2127 BLAIR BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 7 CONNELL SUB GORDON",
+                "Contact": "DALTON, LARRY AND MICKI",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA02R302",
+                "IVR_Trk_": 4061492,
+                "Purpose": "Redo electrical and plumbing, drywall, insulation, and paint. Adding 2 decks to back.",
+                "Council_Dist": 18,
+                "Lon": -86.80435937,
+                "Lat": 36.13059349,
+                "ObjectId": 79,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8197305299207,
+                    36.1370446198514
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074335",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Detached Accessory Dwelling Unit",
+                "Parcel": "104063A00200CO",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 149746,
+                "Address": "210 B FAIRFAX AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT B HOMES AT 210 FAIRFAX AVENUE",
+                "Contact": "MITCHELL CONSTRUCTION, LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA11R301",
+                "IVR_Trk_": 4061420,
+                "Purpose": "To construct DADU with 914 SF of garage, 805 SF of living space, 132 SF of porches/decks.",
+                "Council_Dist": 18,
+                "Lon": -86.81973053,
+                "Lat": 36.13704462,
+                "ObjectId": 80,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7634077399464,
+                    36.1679509700428
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074403",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Residential",
+                "Parcel": "09303012600",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 125000,
+                "Address": "407 S 4TH ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1 SAMARITAN CENTER, INC. PROPERTY, LOTS 1 & 2 BLK F HOLLINS PROPERTY & PT OF CLOSED ROW",
+                "Contact": "HARRIS DEMOLITION LLC",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A001",
+                "IVR_Trk_": 4061509,
+                "Purpose": "Demolition and removal of demo debris for structures at this address - to include removal of footers.  Nothing will be burned on site and we will not encroach on right of way.",
+                "Council_Dist": 6,
+                "Lon": -86.76340774,
+                "Lat": 36.16795097,
+                "ObjectId": 81,
+                "ZIP": "37206"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7625769896497,
+                    36.2146417099499
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074410",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "06016015600",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 77030,
+                "Address": "116 DELLWAY DR",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 253 SEC 2 JOYWOOD HGTS",
+                "Contact": "ARTISAN BUILD CONSTRUCT LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4061523,
+                "Purpose": "We intend to add 745 sq ft to the existing 1008 sq ft home. The layout will be reconfigured to include a total of 3 bedrooms and 2 1/2 baths.  Final sq footage will be 1753.  This is an addition of 1 1/2 baths. We will be adding a front facing gable to the roof and replacing the existing roof.  All electrical, plumbing, and mechanical will be repaired and or replaced.  We will also be renovating the kitchen.  The estimated costs of construction are $76,285.  Gas range and tankless water heater will be added. There will be no fireplace. ",
+                "Council_Dist": 5,
+                "Lon": -86.76257699,
+                "Lat": 36.21464171,
+                "ObjectId": 82,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7462234500582,
+                    36.1999208302216
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074489",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "07209026800",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 469761,
+                "Address": "917 FAIRWIN AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 30 ESKRIDGE SUB",
+                "Contact": "Remodel 615",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4061665,
+                "Purpose": "Remove existing roof. frame in 2nd story with additional 2 bedrooms 1 full bath and storage areas. 1st story demo existing walls and reconfigure the entire 1st level. master bedroom mudroom laundry room kitchen living room 1.5 bathrooms/ ",
+                "Council_Dist": 5,
+                "Lon": -86.74622345,
+                "Lat": 36.19992083,
+                "ObjectId": 83,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8174770296737,
+                    36.1255308003499
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073783",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Pools - Residential",
+                "Parcel": "117020U00200CO",
+                "Date_Entered": "Tue, 16 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 108116,
+                "Address": "2903 B2 COMPTON RD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT B HOMES AT 2903 COMPTON ROAD",
+                "Contact": "Anthony & Sylvan Pools",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U017",
+                "IVR_Trk_": 4060431,
+                "Purpose": "To install a new IN-GROUND POOL with spa and deck. MUST INCLUDE REQUIRED FENCING AND/OR ALARM(S). Located to the rear of a principal structure. Installation must conform to easements on parcel. Separate permits are required for any proposed electrical, plumbing, & gas/mechanical work and is not part of this Building Permit.  Specifications:  1. 15\u2019x28\u2019 totaling 86 pool perimeter or 420 Sq. ft. with a pool min depth of 4\u2019 and a pool max depth of 6\u2019. Estimated gallons 10,839 of Fusion Salt.  2. Entrance of pool is four solid concrete steps and a sun shelf at 56 Sq. ft. with a water depth of 9\u201d. Deep end of pool will have a built-in swim out for existing at 8\u2019 in length. Water features include two bubblers on sun shelf, and three laminar jets w/ LED.  A Pool Eye Smart Pool Alarm PE20 will be installed as well.  3. There will be an attached spa consisting of 24 Sq. ft. installed at the height of 24\u201d with stone veneer on both sides.  4. Installing 334 Sq. ft. of 12\u201dx24\u201d travertine in sand as decking.  A 34\u2019 black drainage pipe to be installed for imperious area from pool ties into ground.   5. An existing 52\u201d Code Compliant Pool Fence Barrier with self-latching gates to outswing from pool & lock installed at 54\u201d from ground are to be installed. Attached to entrance gates will be a Yard Guard YG03 gate/door water hazard alarm. Door chirp will be utilized. See line #50 of A&S Contract Agreement for purchase of gate alarm at time of contract sale.",
+                "Council_Dist": 24,
+                "Lon": -86.81747703,
+                "Lat": 36.1255308,
+                "ObjectId": 84,
+                "ZIP": "37215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7413449800245,
+                    36.2042756703078
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074526",
+                "Permit_Type_Description": "Building Commercial - New",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "072063S00200CO",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1057 B E TRINITY LN",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT 1057B HOMES AT 1057 E TRINITY LANE",
+                "Contact": "ART BUILDING INC",
+                "Per_Ty": "CACN",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4061732,
+                "Purpose": "The parent parcel number is 072063S90000CO, is zone code MUL-A, contains 7,235 Sq. Ft.. this permit is to construct Unit b of proposed horizontal property line regime with 2015 Square Feet of living area, 373 SF attached garage and a 29 SF front covered porch. 5\u2019 min. front s/b, 5\u2019 min. side s/b and 20\u2019 min rear s/b, must comply with tree regulations one new 2\u201d tree for every 30\u2019 of road frontage, for every 50\u2019 of site frontage, a 24\u201dx36\u201d sign must be placed in English and Spanish with information in regards to metro council 2017-835. Must comply with metro council bills 2014-725 and 2014-770. max allowed height is 45' three floors max. min required distance between structures is 6' min with no bump outs.",
+                "Council_Dist": 5,
+                "Lon": -86.74134497999998,
+                "Lat": 36.20427567,
+                "ObjectId": 85,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 86,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8550156203573,
+                    36.1640844501574
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021073328",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Carport",
+                "Parcel": "09102031900",
+                "Date_Entered": "Mon, 15 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 17871,
+                "Address": "5505 A2 CALIFORNIA AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1410 BLK 46 WEST NASH NO 2",
+                "Contact": "MCKINNIS, SEAN",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U004",
+                "IVR_Trk_": 4059738,
+                "Purpose": "REJECTED: DUPLICATE PERMIT APP, TO BE CANCELLED.  SEE CARN-T2021073326\t    To construct carport with 370 SF.",
+                "Council_Dist": 20,
+                "Lon": -86.85501562,
+                "Lat": 36.16408445,
+                "ObjectId": 86,
+                "ZIP": "37209"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 87,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.741405060249,
+                    36.2042819701109
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074527",
+                "Permit_Type_Description": "Building Commercial - New",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "072063S00300CO",
+                "Date_Entered": "Thu, 18 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 2015,
+                "Address": "1057 C E TRINITY LN",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT 1057C HOMES AT 1057 E TRINITY LANE",
+                "Contact": "ART BUILDING INC",
+                "Per_Ty": "CACN",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4061733,
+                "Purpose": "The parent parcel number is 072063S90000CO, is zone code MUL-A, contains 7,235 Sq. Ft.. this permit is to construct Unit C of proposed horizontal property line regime with 2015 Square Feet of living area, 373 SF attached garage and a 29 SF front covered porch. 5\u2019 min. front s/b, 5\u2019 min. side s/b and 20\u2019 min rear s/b, must comply with tree regulations one new 2\u201d tree for every 30\u2019 of road frontage, for every 50\u2019 of site frontage, a 24\u201dx36\u201d sign must be placed in English and Spanish with information in regards to metro council 2017-835. Must comply with metro council bills 2014-725 and 2014-770. max allowed height is 45' three floors max. min required distance between structures is 6' min with no bump outs.",
+                "Council_Dist": 5,
+                "Lon": -86.74140506,
+                "Lat": 36.20428197,
+                "ObjectId": 87,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 88,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7265766902283,
+                    36.2232444297423
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074620",
+                "Permit_Type_Description": "Building Commercial - Addition",
+                "Permit_Subtype_Description": "Personal Care Svcs,  Fitness Studio",
+                "Parcel": "061110B00200CO",
+                "Date_Entered": "Fri, 19 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "4117 GALLATIN PIKE 105",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT SUITE 2 INGLEWOOD PROFESSIONAL PARK",
+                "Contact": "SHELBY JUNKINS",
+                "Per_Ty": "CACA",
+                "Per_SubTy": "CAF18B011",
+                "IVR_Trk_": 4061881,
+                "Purpose": "TENANT BUILD OUT OF APPROX. 1,336 SQ FT. BETH MONCEL STUDIOS   POC SHELBY JUNKINS",
+                "Council_Dist": 7,
+                "Lon": -86.72657669,
+                "Lat": 36.22324443,
+                "ObjectId": 88,
+                "ZIP": "37216"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 89,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7729901499305,
+                    36.1962390703224
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074676",
+                "Permit_Type_Description": "Building Demolition Permit",
+                "Permit_Subtype_Description": "Demolition Permit - Residential",
+                "Parcel": "07114027400",
+                "Date_Entered": "Fri, 19 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 2000,
+                "Address": "122 ELMHURST AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 9 BLK B EAST VIEW SUB",
+                "Contact": "M CITY DEMO PLUS, LLC",
+                "Per_Ty": "CADM",
+                "Per_SubTy": "CAZ01A001",
+                "IVR_Trk_": 4061956,
+                "Purpose": "TO DEMOLISH EXISTING RESIDENCE.  NOT TO BE BURNED ON SITE.  WORK ON THIS DEMOLITION PERMIT MUST COMMENCE WITHIN THIRTY (30) DAYS OF ISSUANCE AND BE COMPLETED SIXTY (60) DAYS AFTER COMMENCEMENT. THIS PERMIT EXPIRES 90 DAYS AFTER THE PERMIT IS ISSUED. PLEASE CALL 811 BEFORE YOU DIG.  APPLICANT TO SUBMIT COMPLETED DEMOLITION COMMENCEMENT AFFIDAVIT FORM UPON COMMENCEMENT OF DEMOLITION.",
+                "Council_Dist": 2,
+                "Lon": -86.77299015,
+                "Lat": 36.19623907,
+                "ObjectId": 89,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 90,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.5807712900748,
+                    36.0661970698763
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074796",
+                "Permit_Type_Description": "Building Residential - Addition",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "151090B09000CO",
+                "Date_Entered": "Fri, 19 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "5425 SKIP JACK DR",
+                "City": "ANTIOCH",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 87 LAKESIDE COVE AT PERCY PRIEST PH 2",
+                "Contact": "REMODEL 615 LLC",
+                "Per_Ty": "CARA",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4062158,
+                "Purpose": "Add a single story addition to the back. Addition will consist of 1 living room area 1 bedroom with closet and 1 full bath. ",
+                "Council_Dist": 8,
+                "Lon": -86.58077129,
+                "Lat": 36.06619707,
+                "ObjectId": 90,
+                "ZIP": "37013"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 91,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8503121996332,
+                    36.0889196197061
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074879",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "13011005200",
+                "Date_Entered": "Mon, 22 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 740068,
+                "Address": "908 LYNNWOOD BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "E SIDE LYNNWOOD BLVD S OF WAYLAND DR",
+                "Contact": "HR Properties of Tennessee",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4062268,
+                "Purpose": "Construction of a new single family residence with 5,650 SF of living area, 960 SF attached garage and 560 SF of porch areas at 908 Lynnwood Blvd., Nashville, TN 37205. Home will include two stories, 5 bedrooms, 6 bathrooms and a 3-car garage. not to be over any easements. 15' side setbacks, 20' rear setback, 78' front setback per avg.  ***PURSUANT TO ORDINANCE NO 2008-1263 of the Metropolitan Code of Laws, I , holder of this permit, hereby certify that all construction and demolition waste generated by any and all activities governed by this permit shall be disposed of in an approved landfill.  Further, I certify that no construction or demolition waste shall be stored on the property in violation of any provisions of the Metropolitan Code. For every 30 feet of street frontage, or fraction thereof, one 2 inch caliper tree as listed in the Urban Forestry approved tree list shall be planted on the subject property.   For every 50 feet of site frontage, a double-sided sign 24\u201d x 36\u201d in size must be posted in English and Spanish that contains the information required by Ordinance No. 2017-835.  No more than three signs are required.***",
+                "Council_Dist": 34,
+                "Lon": -86.8503122,
+                "Lat": 36.08891962,
+                "ObjectId": 91,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 92,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8327447100043,
+                    36.1924119198437
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021074971",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Multifamily, Townhome",
+                "Parcel": "07013005500",
+                "Date_Entered": "Mon, 22 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 450000,
+                "Address": "1917 S HAMILTON RD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 4 BLK 1 SHEEGOG SUB",
+                "Contact": "DON HARDIN GROUP",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA03R301",
+                "IVR_Trk_": 4062443,
+                "Purpose": "REJECTED: REQUIRES MASTER PERMIT. MASTER PERMIT INITIATED 11/16. USE MASTER PERMIT APPLICATION CAUO-T2021073720\t    This permit is for 6 townhome units",
+                "Council_Dist": 1,
+                "Lon": -86.83274471,
+                "Lat": 36.19241192,
+                "ObjectId": 92,
+                "ZIP": "37218"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 93,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8197305299207,
+                    36.1370446198514
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075029",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "104063A00200CO",
+                "Date_Entered": "Mon, 22 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 149746,
+                "Address": "210 B FAIRFAX AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "UNIT B HOMES AT 210 FAIRFAX AVENUE",
+                "Contact": "MITCHELL CONSTRUCTION, LLC",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4062551,
+                "Purpose": "REQUIRE LEASE AGREEMENTS FOR BOTH UNITS DATING BACK PRIOR TO 2007 FOR NON-CONFORMING USE REVIEW. EMAIL DIRECTLY TO: THOMAS.CORCORAN@NASHVILLE.GOV. PERMIT APPLICATION NUMBER MUST BE IN SUBJECT LINE TO PROCESS.    To construct single family residence with 914 SF of garage, 805 SF of living space, 132 SF of porches/decks.",
+                "Council_Dist": 18,
+                "Lon": -86.81973053,
+                "Lat": 36.13704462,
+                "ObjectId": 93,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 94,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7810546002221,
+                    36.2544282797413
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075030",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "050020C05600CO",
+                "Date_Entered": "Mon, 22 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 223003,
+                "Address": "1082 CONE BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 56 THORNTON GROVE PUD PH 1A",
+                "Contact": "NVR, INC. T/A RYAN HOMES",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4062557,
+                "Purpose": "NEW SFD ON SLAB FOUNDATION MEASURING 1,680 SF WITH A GARAGE OF 400 SF, FRONT PORCH OF 26 SF AND REAR PATIO OF 140 SF. MINIMUM REQUIRED SETBACKS: 20' STREET AND REAR, 5' SIDE. MUST COMPLY WITH PUDR.",
+                "Council_Dist": 3,
+                "Lon": -86.7810546,
+                "Lat": 36.25442828,
+                "ObjectId": 94,
+                "ZIP": "37207"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 95,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7929955801038,
+                    36.1228150301368
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075172",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Single Family Residence",
+                "Parcel": "11704018600",
+                "Date_Entered": "Mon, 22 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "1507 DALLAS AVE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 25 VICTORIA PLACE",
+                "Contact": "ODOM CONSTRUCTION & REMODELING, LLC",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA01R301",
+                "IVR_Trk_": 4062787,
+                "Purpose": "rejected: construction cost required: EMAIL DIRECTLY TO: THOMAS.CORCORAN@NASHVILLE.GOV. PERMIT APPLICATION NUMBER MUST BE IN SUBJECT LINE TO PROCESS.    TO CONDUCT GENERAL RENOVATIONS TO EXISTING SINGLE-FAMILY RESIDENCE\u2026 \u2026NO CHANGE TO BUILDING/ROOF LINES OR FOOTPRINT\u2026 \u2026NO SECOND KITCHEN, TO REMAIN SINGLE FAMILY RESIDENCE\u2026 \u2026To include: Structural work. Electrical & Plumbing trades needed as well.",
+                "Council_Dist": 18,
+                "Lon": -86.79299557999998,
+                "Lat": 36.12281503,
+                "ObjectId": 95,
+                "ZIP": "37212"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 96,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7665756703554,
+                    36.1125742898649
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075200",
+                "Permit_Type_Description": "Building Sign Permit",
+                "Permit_Subtype_Description": "Sign - Ground /  Wall Signs",
+                "Parcel": "11811012100",
+                "Date_Entered": "Tue, 23 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 4500,
+                "Address": "724 THOMPSON LN",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 1 BLK J BERRY HILL GARDENS",
+                "Contact": "JOSLIN SIGN & MAINTENANCE CO INC",
+                "Per_Ty": "CASN",
+                "Per_SubTy": "CAZ02A001",
+                "IVR_Trk_": 4062817,
+                "Purpose": "To change the sign faces out on 1 existing pylon sign and 2 wall sign face changes for Sudden Service. No changes are to be made to the height, size, and location of the existing signage.",
+                "Council_Dist": 26,
+                "Lon": -86.76657566999998,
+                "Lat": 36.11257429,
+                "ObjectId": 96,
+                "ZIP": "37204"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 97,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.8528122595779,
+                    36.1278599500071
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075278",
+                "Permit_Type_Description": "Building Commercial - New",
+                "Permit_Subtype_Description": "Restaurant (Full Service)",
+                "Parcel": "10315005100",
+                "Date_Entered": "Tue, 23 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 927632,
+                "Address": "17 WHITE BRIDGE PIKE",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT LOT 1 POST SQUARE SHOPPING CENTER RESUB OF LOTS 1 & 2",
+                "Contact": "JUSTIN CRANDALL",
+                "Per_Ty": "CACN",
+                "Per_SubTy": "CAF19A203",
+                "IVR_Trk_": 4062931,
+                "Purpose": "to build a new 6289 SF restaurant for chuys. 50 required parking spaces.  POC JUSTIN CRANDALL  ***PURSUANT TO ORDINANCE NO 2008-1263 of the Metropolitan Code of Laws, I , holder of this permit, hereby certify that all construction and demolition waste generated by any and all activities governed by this permit shall be disposed of in an approved landfill.  Further, I certify that no construction or demolition waste shall be stored on the property in violation of any provisions of the Metropolitan Code. For every 30 feet of street frontage, or fraction thereof, one 2 inch caliper tree as listed in the Urban Forestry approved tree list shall be planted on the subject property.   For every 50 feet of site frontage, a double-sided sign 24\u201d x 36\u201d in size must be posted in English and Spanish that contains the information required by Ordinance No. 2017-835.  No more than three signs are required.***",
+                "Council_Dist": 20,
+                "Lon": -86.85281225999998,
+                "Lat": 36.12785995,
+                "ObjectId": 97,
+                "ZIP": "37205"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 98,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.687609969584,
+                    36.1280861301305
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075364",
+                "Permit_Type_Description": "Building Commercial - Rehab",
+                "Permit_Subtype_Description": "Warehouse, Storage S-1",
+                "Parcel": "10700005000",
+                "Date_Entered": "Tue, 23 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "33 AIRWAYS BLVD",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "PT OF LOT 3 METROPOLITAN NASHVILLE AIRPORT AUTHORITY",
+                "Contact": "ray guasco",
+                "Per_Ty": "CACR",
+                "Per_SubTy": "CAH10S001",
+                "IVR_Trk_": 4063055,
+                "Purpose": "to conduct interior renovations to install a conveyor system for Fedex. no change to footprint.  ***PURSUANT TO ORDINANCE NO 2008-1263 of the Metropolitan Code of Laws, I , holder of this permit, hereby certify that all construction and demolition waste generated by any and all activities governed by this permit shall be disposed of in an approved landfill.  Further, I certify that no construction or demolition waste shall be stored on the property in violation of any provisions of the Metropolitan Code. For every 30 feet of street frontage, or fraction thereof, one 2 inch caliper tree as listed in the Urban Forestry approved tree list shall be planted on the subject property.   For every 50 feet of site frontage, a double-sided sign 24\u201d x 36\u201d in size must be posted in English and Spanish that contains the information required by Ordinance No. 2017-835.  No more than three signs are required.***",
+                "Council_Dist": 13,
+                "Lon": -86.68760996999998,
+                "Lat": 36.12808613,
+                "ObjectId": 98,
+                "ZIP": "37217"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 99,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.817446820229,
+                    36.1679573199063
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075382",
+                "Permit_Type_Description": "Building Residential - Rehab",
+                "Permit_Subtype_Description": "Multifamily, Condominium > 5 Unit Bldg",
+                "Parcel": "09202010300",
+                "Date_Entered": "Tue, 23 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 0,
+                "Address": "2607 JEFFERSON ST",
+                "City": "NASHVILLE",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 9 LONG & ASHWORTH",
+                "Contact": "PROCARE SOLUTIONS, LLC DBA PROCARE PROPERTY RESTORATION",
+                "Per_Ty": "CARR",
+                "Per_SubTy": "CAA03R299",
+                "IVR_Trk_": 4063076,
+                "Purpose": "To conduct general renovations to interior of apartments  due to fire.  No change to building/roof lines or footprint.  For every 50' site frontage, a 24  x 36  d/f sign must be placed in English and Spanish with information in regards to metro council bill 2017-835. Contract amt $31k. ",
+                "Council_Dist": 21,
+                "Lon": -86.81744682,
+                "Lat": 36.16795732,
+                "ObjectId": 99,
+                "ZIP": "37208"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 100,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6591329304114,
+                    36.0567358900016
+                ]
+            },
+            "properties": {
+                "Permit__": "T2021075340",
+                "Permit_Type_Description": "Building Residential - New",
+                "Permit_Subtype_Description": "Accessory Structure, Carport",
+                "Parcel": "16302000300",
+                "Date_Entered": "Tue, 23 Nov 2021 06:00:00 GMT",
+                "Date_Issued": null,
+                "Const_Cost": 17388,
+                "Address": "4100 B HIGHLANDER CT",
+                "City": "ANTIOCH",
+                "State": "TN",
+                "Subdivision_Lot": "LOT 50 HICKORY HIGHLAND PLACE PHASE 1",
+                "Contact": "israel cansino",
+                "Per_Ty": "CARN",
+                "Per_SubTy": "CAA14U004",
+                "IVR_Trk_": 4063020,
+                "Purpose": "to construct 720SF detached garage to the rear of existing single family residence. 20' min. street side setback, 20' min. rear setback, not to be over any easements. not to be used for living space or commercial purposes. Max height 16\u2019 to ridge line.  ***PURSUANT TO ORDINANCE NO 2008-1263 of the Metropolitan Code of Laws, I , holder of this permit, hereby certify that all construction and demolition waste generated by any and all activities governed by this permit shall be disposed of in an approved landfill.  Further, I certify that no construction or demolition waste shall be stored on the property in violation of any provisions of the Metropolitan Code* For every 30 feet of street frontage, or fraction thereof, one 2 inch caliper tree as listed in the Urban Forestry approved tree list shall be planted on the subject property.*  For every 50 feet of site frontage, a double-sided sign 24\u201d x 36\u201d in size must be posted in English and Spanish that contains the information required by Ordinance No. 2017-835.  No more than three signs are required.***",
+                "Council_Dist": 28,
+                "Lon": -86.65913293,
+                "Lat": 36.05673589,
+                "ObjectId": 100,
+                "ZIP": "37013"
+            }
+        }
+    ]
+}

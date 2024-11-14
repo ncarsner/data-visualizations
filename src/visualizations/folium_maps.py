@@ -1,5 +1,8 @@
 import folium
 import random
+import json
+
+# from ..data_processing.geojson_processing import read_geojson as gp
 
 # 20 most populous cities in the US with their latitude and longitude coordinates
 cities = {
@@ -68,9 +71,10 @@ Icon Options:
     - 'heart'
 """
 
-tn_congressional_districts = 'data/raw/geojson/tn_congressional_districts.geojson'
-nash_bldg_permits = 'data/raw/geojson/Nashville_Building_Permit_Applications.geojson'
-public_health_clinics = 'data/raw/geojson/public_health_clinics.geojson'
+
+tn_congressional_districts = "data/raw/geojson/tn_congressional_districts.geojson"
+nash_bldg_permits = "data/processed/geojson/Nashville_Building_Permit_Applications.geojson"
+public_health_clinics = "data/raw/geojson/public_health_clinics.geojson"
 
 if __name__ == "__main__":
     # Select a random city from the dictionary
@@ -103,26 +107,67 @@ if __name__ == "__main__":
         name="CartoDB Positron",
         attr="&copy; OpenStreetMap contributors & CartoDB",
     ).add_to(m)
-
-    # Manually add OpenStreetMap as the first tile layer
-    folium.TileLayer("OpenStreetMap", name="OpenStreetMap").add_to(m)
-
-    # Add Tennessee Congressional Districts GeoJSON data to the map
-    folium.GeoJson(tn_congressional_districts, name="TN Congressional Districts", show=False).add_to(m)  # noqa: E501
-
-    # Add Nashville Public Health Clinics GeoJSON data to the map
-    folium.GeoJson(public_health_clinics, name="Public Health Clinics", show=False).add_to(m)  # noqa: E501
-
-    # Add a marker to the map for the selected city
-    folium.Marker(
-        location=coordinates, popup=city, icon=folium.Icon(icon="home", color="orange")
+    folium.TileLayer(
+        "openstreetmap",
+        name="OpenStreetMap",
+        attr="&copy; OpenStreetMap contributors"
     ).add_to(m)
 
+    # Add Nashville Congressional Districts GeoJSON data to the map
+    folium.GeoJson(
+        data=tn_congressional_districts,
+        name="Congressional Districts",
+        show=False,
+        popup=folium.GeoJsonPopup(fields=['DISTRICT'], labels=True),
+        marker=folium.Marker(icon=folium.Icon(icon="flag", color="red"))
+    ).add_to(m)  # noqa: E501
+
+    # Add Nashville Public Health Clinics GeoJSON data to the map
+    folium.GeoJson(
+        data=public_health_clinics, 
+        name="Public Health Clinics", 
+        show=False,
+        popup=folium.GeoJsonPopup(fields=['ClinicName', 'Address', 'Hours'], labels=True),
+        marker=folium.Marker(icon=folium.Icon(icon="plus-sign", color="blue"))
+    ).add_to(m)  # noqa: E501
+
+    # Add Nashville Building Permit Applications GeoJSON data to the map
+    folium.GeoJson(
+        data=nash_bldg_permits,
+        name="Nashville Building Permits",
+        show=False,
+        popup=folium.GeoJsonPopup(fields=['Permit_Type_Description', 'Date_Entered', 'Const_Cost'], labels=True),
+        marker=folium.Marker(icon=folium.Icon(icon="home", color="orange"))
+    ).add_to(m)  # noqa: E501
+
+    # Add a marker to the map for the selected city
+    # folium.Marker(
+    #     location=coordinates, popup=city, icon=folium.Icon(icon="home", color="orange")
+    # ).add_to(m)
+
     # # Set the default layer to OpenStreetMap tiles
-    # folium.TileLayer("OpenStreetMap")
+    # folium.TileLayer("OpenStreetMap").render(m)
 
     # Add layer control to switch between tile layers
     folium.LayerControl().add_to(m)
+
+    # # Add a filter to narrow down selected layers
+    # def filter_function(feature):
+    #     # Example filter: Only show features with a specific property value
+    #     # Modify this function based on your filtering criteria
+    #     if 'Permit_Type_Description' in feature['properties']:
+    #         return feature['properties']['Permit_Type_Description'] == 'New Construction'
+    #     return True
+
+    # # Apply the filter to the Nashville Building Permit Applications GeoJSON data
+    # folium.GeoJson(
+    #     data=nash_bldg_permits,
+    #     name="Filtered Nashville Building Permits",
+    #     show=False,
+    #     popup=folium.GeoJsonPopup(fields=['Permit_Type_Description', 'Date_Entered', 'Const_Cost'], labels=True),
+    #     marker=folium.Marker(icon=folium.Icon(icon="home", color="green")),
+    #     filter_function=filter_function
+    # ).add_to(m)
 
     # Save the map to an HTML file
     m.save("example_map.html")

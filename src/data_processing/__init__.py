@@ -5,3 +5,5 @@
 # from .module_name import ClassName, function_name
 
 # Initialize any package-level variables or settings if needed
+
+from .geojson_processing import read_geojson as gp
