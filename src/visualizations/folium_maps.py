@@ -70,6 +70,7 @@ Icon Options:
 
 tn_congressional_districts = 'data/raw/geojson/tn_congressional_districts.geojson'
 nash_bldg_permits = 'data/raw/geojson/Nashville_Building_Permit_Applications.geojson'
+public_health_clinics = 'data/raw/geojson/public_health_clinics.geojson'
 
 if __name__ == "__main__":
     # Select a random city from the dictionary
@@ -109,8 +110,8 @@ if __name__ == "__main__":
     # Add Tennessee Congressional Districts GeoJSON data to the map
     folium.GeoJson(tn_congressional_districts, name="TN Congressional Districts", show=False).add_to(m)  # noqa: E501
 
-    # Add Nashville Building Permit Applications GeoJSON data to the map
-    folium.GeoJson(nash_bldg_permits, name="Nashville Building Permit Applications", show=False).add_to(m)  # noqa: E501
+    # Add Nashville Public Health Clinics GeoJSON data to the map
+    folium.GeoJson(public_health_clinics, name="Public Health Clinics", show=False).add_to(m)  # noqa: E501
 
     # Add a marker to the map for the selected city
     folium.Marker(
