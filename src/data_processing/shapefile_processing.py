@@ -14,21 +14,6 @@ def read_shapefile(file_path):
     return gpd.read_file(file_path)
 
 
-def filter_shapefile(gdf, column_name, value):
-    """
-    Filters a GeoDataFrame based on a column value.
-
-    Parameters:
-    gdf (GeoDataFrame): The GeoDataFrame to filter.
-    column_name (str): The column name to filter on.
-    value: The value to filter by.
-
-    Returns:
-    GeoDataFrame: The filtered GeoDataFrame.
-    """
-    return gdf[gdf[column_name] == value]
-
-
 def save_shapefile(gdf, output_path):
     """
     Saves a GeoDataFrame to a shapefile.
@@ -42,5 +27,5 @@ def save_shapefile(gdf, output_path):
 
 # Example usage:
 # gdf = read_shapefile("data/raw/shapefiles/Public_Health_Clinics.shp")
-# filtered_gdf = filter_shapefile(gdf, "column_name", "value")
+# filtered_gdf = transformer.filter_shapefile(gdf, "column_name", "value")
 # save_shapefile(filtered_gdf, "data/processed/shapefiles/Public_Health_Clinics.shp")
