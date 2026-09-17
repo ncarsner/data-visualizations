@@ -92,8 +92,8 @@ def save_geojson(geojson_data, output_file_path, limit=100):
 
 
 def main():
-    input_file_path = "data/raw/geojson/Nashville_Building_Permit_applications.geojson"
-    output_file_path = "data/processed/geojson/Nashville_Building_Permit_applications.geojson"
+    input_file_path = "data/raw/geojson/Nashville_Building_Permit_Applications.geojson"
+    output_file_path = "data/processed/geojson/Nashville_Building_Permit_Applications.geojson"
     # property_name = ''
     # property_value = ''
     res = read_geojson(input_file_path)

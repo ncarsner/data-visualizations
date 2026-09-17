@@ -26,23 +26,36 @@ def transform_geojson(geojson, from_crs="EPSG:4326", to_crs="EPSG:3857"):
     """
     Transform GeoJSON coordinates from one CRS to another.
 
+    Accepts a bare geometry, a Feature, or a FeatureCollection. The input is
+    left unmodified; a transformed copy is returned.
+
     Parameters:
-    geojson (dict): The GeoJSON object.
+    geojson (dict): A geometry, Feature, or FeatureCollection.
     from_crs (str): The source CRS in EPSG code format.
     to_crs (str): The target CRS in EPSG code format.
 
     Returns:
-    dict: Transformed GeoJSON object.
+    dict: Transformed GeoJSON object of the same type as the input.
     """
     project = pyproj.Transformer.from_crs(from_crs, to_crs, always_xy=True).transform
 
-    def transform_coords(coords):
-        if isinstance(coords[0], (list, tuple)):
-            return [transform_coords(c) for c in coords]
-        else:
-            point = Point(*coords)
-            transformed_point = transform(project, point)
-            return transformed_point.x, transformed_point.y
+    def transform_geometry(geometry):
+        if geometry is None:
+            return None
+        return mapping(transform(project, shape(geometry)))
 
-    geojson["coordinates"] = transform_coords(geojson["coordinates"])
-    return geojson
+    geojson_type = geojson.get("type")
+
+    if geojson_type == "FeatureCollection":
+        return {
+            **geojson,
+            "features": [
+                {**feature, "geometry": transform_geometry(feature.get("geometry"))}
+                for feature in geojson["features"]
+            ],
+        }
+
+    if geojson_type == "Feature":
+        return {**geojson, "geometry": transform_geometry(geojson.get("geometry"))}
+
+    return transform_geometry(geojson)

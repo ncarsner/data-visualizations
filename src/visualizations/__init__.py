@@ -6,4 +6,4 @@
 
 # Initialize any package-level variables or settings if needed
 
-from ..data_processing.geojson_processing import GeoJsonProcessor as gp
+# Visualization modules are imported directly, e.g. from .folium_maps import ...

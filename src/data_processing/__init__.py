@@ -6,4 +6,4 @@
 
 # Initialize any package-level variables or settings if needed
 
-from .geojson_processing import read_geojson as gp
+# Import format modules directly, e.g. from .geojson_processing import read_geojson
