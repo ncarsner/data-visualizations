@@ -41,6 +41,6 @@ def save_shapefile(gdf, output_path):
 
 
 # Example usage:
-gdf = read_shapefile('path/to/shapefile.shp')
-filtered_gdf = filter_shapefile(gdf, 'column_name', 'value')
-save_shapefile(filtered_gdf, 'path/to/output.shp')
+# gdf = read_shapefile("data/raw/shapefiles/Public_Health_Clinics.shp")
+# filtered_gdf = filter_shapefile(gdf, "column_name", "value")
+# save_shapefile(filtered_gdf, "data/processed/shapefiles/Public_Health_Clinics.shp")
