@@ -1,10 +1,21 @@
+"""
+Interactive Folium maps of Nashville and Tennessee geospatial datasets.
+
+build_map() layers congressional districts, public health clinics, and building
+permit applications over switchable base tiles, and returns the map. Persist it
+with save_plots.save_map().
+
+Icon options:
+    folium.Icon accepts Bootstrap glyphicon names, including:
+    'cloud', 'info-sign', 'home', 'ok-sign', 'remove-sign', 'star', 'flag',
+    'plus-sign', 'minus-sign', 'asterisk', 'exclamation-sign', 'gift', 'leaf',
+    'fire', 'plane', 'envelope', 'pencil', 'thumbs-up', 'thumbs-down', 'music',
+    'heart'
+"""
+
 import folium
-import random
-import json
 
-# from ..data_processing.geojson_processing import read_geojson as gp
-
-# 20 most populous cities in the US with their latitude and longitude coordinates
+# Most populous US cities, plus Nashville, as [latitude, longitude]
 cities = {
     "New York, NY": [40.7128, -74.0060],
     "Los Angeles, CA": [34.0522, -118.2437],
@@ -30,73 +41,30 @@ cities = {
     "Portland, OR": [45.5051, -122.6750],
 }
 
-"""
-This script generates an interactive map using the Folium library, centered on a randomly selected city from a predefined list of the 20 most populous cities in the US. The map includes a marker for the selected city and multiple tile layers that can be switched using a layer control.
-Modules:
-    folium: Used to create the map and add markers and tile layers.
-    random: Used to randomly select a city from the list.
-Data:
-    cities (dict): A dictionary containing the names of the 20 most populous cities in the US as keys and their latitude and longitude coordinates as values.
-Functions:
-    None
-Execution:
-    - Selects a random city from the `cities` dictionary.
-    - Creates a Folium map centered at the selected city's coordinates.
-    - Adds a marker to the map for the selected city.
-    - Adds multiple tile layers to the map.
-    - Adds a layer control to switch between tile layers.
-    - Saves the map to an HTML file named 'example_map.html'.
-Icon Options:
-    The `folium.Icon` class allows for various icon options, including:
-    - 'cloud'
-    - 'info-sign'
-    - 'home'
-    - 'ok-sign'
-    - 'remove-sign'
-    - 'star'
-    - 'flag'
-    - 'plus-sign'
-    - 'minus-sign'
-    - 'asterisk'
-    - 'exclamation-sign'
-    - 'gift'
-    - 'leaf'
-    - 'fire'
-    - 'plane'
-    - 'envelope'
-    - 'pencil'
-    - 'thumbs-up'
-    - 'thumbs-down'
-    - 'music'
-    - 'heart'
-"""
 
+def build_map(districts, clinics, permits, location=None, zoom_start=14):
+    """
+    Build a layered map of districts, clinics, and building permits.
 
-tn_congressional_districts = "data/raw/geojson/tn_congressional_districts.geojson"
-nash_bldg_permits = "data/processed/geojson/Nashville_Building_Permit_Applications.geojson"
-public_health_clinics = "data/raw/geojson/public_health_clinics.geojson"
+    Each dataset may be a GeoJSON file path or an in-memory FeatureCollection.
+    Data layers start hidden and are toggled from the layer control.
 
-if __name__ == "__main__":
-    # Select a random city from the dictionary
-    city, coordinates = random.choice(list(cities.items()))
+    Parameters:
+    districts (str or dict): Congressional districts; popups show DISTRICT.
+    clinics (str or dict): Public health clinics; popups show ClinicName, Address, Hours.
+    permits (str or dict): Building permit applications; popups show
+        Permit_Type_Description, Date_Entered, Const_Cost.
+    location (list): [latitude, longitude] map center. Default is Nashville, TN.
+    zoom_start (int): Initial zoom level. Default is 14.
 
-    city = "Nashville, TN"
-    coordinates = [36.174465, -86.767960]
+    Returns:
+    folium.Map: The assembled map.
+    """
+    if location is None:
+        location = cities["Nashville, TN"]
 
-    # Initialize the map with no default tiles
-    m = folium.Map(location=coordinates, zoom_start=14, tiles=None)
+    m = folium.Map(location=location, zoom_start=zoom_start, tiles=None)
 
-    # Add additional tile layers to the map
-    # folium.TileLayer(
-    #     "stamentoner",
-    #     name="Stamen Toner",
-    #     attr="Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.",
-    # ).add_to(m)
-    # folium.TileLayer(
-    #     "stamenterrain",
-    #     name="Stamen Terrain",
-    #     attr="Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.",
-    # ).add_to(m)
     folium.TileLayer(
         "cartodbdark_matter",
         name="CartoDB Dark Matter",
@@ -110,64 +78,34 @@ if __name__ == "__main__":
     folium.TileLayer(
         "openstreetmap",
         name="OpenStreetMap",
-        attr="&copy; OpenStreetMap contributors"
+        attr="&copy; OpenStreetMap contributors",
     ).add_to(m)
 
-    # Add Nashville Congressional Districts GeoJSON data to the map
     folium.GeoJson(
-        data=tn_congressional_districts,
+        data=districts,
         name="Congressional Districts",
         show=False,
-        popup=folium.GeoJsonPopup(fields=['DISTRICT'], labels=True),
-        marker=folium.Marker(icon=folium.Icon(icon="flag", color="red"))
-    ).add_to(m)  # noqa: E501
+        popup=folium.GeoJsonPopup(fields=["DISTRICT"], labels=True),
+        marker=folium.Marker(icon=folium.Icon(icon="flag", color="red")),
+    ).add_to(m)
 
-    # Add Nashville Public Health Clinics GeoJSON data to the map
     folium.GeoJson(
-        data=public_health_clinics, 
-        name="Public Health Clinics", 
+        data=clinics,
+        name="Public Health Clinics",
         show=False,
-        popup=folium.GeoJsonPopup(fields=['ClinicName', 'Address', 'Hours'], labels=True),
-        marker=folium.Marker(icon=folium.Icon(icon="plus-sign", color="blue"))
-    ).add_to(m)  # noqa: E501
+        popup=folium.GeoJsonPopup(fields=["ClinicName", "Address", "Hours"], labels=True),
+        marker=folium.Marker(icon=folium.Icon(icon="plus-sign", color="blue")),
+    ).add_to(m)
 
-    # Add Nashville Building Permit Applications GeoJSON data to the map
     folium.GeoJson(
-        data=nash_bldg_permits,
+        data=permits,
         name="Nashville Building Permits",
         show=False,
-        popup=folium.GeoJsonPopup(fields=['Permit_Type_Description', 'Date_Entered', 'Const_Cost'], labels=True),
-        marker=folium.Marker(icon=folium.Icon(icon="home", color="orange"))
-    ).add_to(m)  # noqa: E501
+        popup=folium.GeoJsonPopup(
+            fields=["Permit_Type_Description", "Date_Entered", "Const_Cost"], labels=True
+        ),
+        marker=folium.Marker(icon=folium.Icon(icon="home", color="orange")),
+    ).add_to(m)
 
-    # Add a marker to the map for the selected city
-    # folium.Marker(
-    #     location=coordinates, popup=city, icon=folium.Icon(icon="home", color="orange")
-    # ).add_to(m)
-
-    # # Set the default layer to OpenStreetMap tiles
-    # folium.TileLayer("OpenStreetMap").render(m)
-
-    # Add layer control to switch between tile layers
     folium.LayerControl().add_to(m)
-
-    # # Add a filter to narrow down selected layers
-    # def filter_function(feature):
-    #     # Example filter: Only show features with a specific property value
-    #     # Modify this function based on your filtering criteria
-    #     if 'Permit_Type_Description' in feature['properties']:
-    #         return feature['properties']['Permit_Type_Description'] == 'New Construction'
-    #     return True
-
-    # # Apply the filter to the Nashville Building Permit Applications GeoJSON data
-    # folium.GeoJson(
-    #     data=nash_bldg_permits,
-    #     name="Filtered Nashville Building Permits",
-    #     show=False,
-    #     popup=folium.GeoJsonPopup(fields=['Permit_Type_Description', 'Date_Entered', 'Const_Cost'], labels=True),
-    #     marker=folium.Marker(icon=folium.Icon(icon="home", color="green")),
-    #     filter_function=filter_function
-    # ).add_to(m)
-
-    # Save the map to an HTML file
-    m.save("example_map.html")
+    return m
