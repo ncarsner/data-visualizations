@@ -2,127 +2,225 @@
 
 ## Project Overview
 
-This project is designed to generate a series of data visualizations for analyzing and presenting insights from datasets. The primary objectives are to process raw data, transform it into a usable format, and produce various types of visualizations to highlight key patterns, trends, and correlations.
+A small pipeline for processing and mapping public geospatial datasets for Nashville and Tennessee. It reads raw GeoJSON, CSV and shapefile data, filters and cleans it, writes processed copies, and renders an interactive Folium map of congressional districts, public health clinics and building permit applications.
 
-## Project Objectives
+The package is organized in three layers:
 
-- **Data Collection and Processing**: Load and preprocess data from various sources.
-- **Data Transformation**: Clean and transform data into formats suitable for visualization.
-- **Visualization Generation**: Create a range of static and interactive visualizations, including bar charts, line plots, and heatmaps.
-- **Report Generation**: Save visualizations and summary reports to facilitate insights and analysis.
+| Layer | Package | Responsibility |
+|---|---|---|
+| Data processing | `src/data_processing/` | Load, clean, transform and export data |
+| Visualization | `src/visualizations/` | Build figures and maps, and save them |
+| Utilities | `src/utils/` | Configuration, logging, geospatial and file helpers |
+
+`src/__main__.py` runs them in sequence.
+
+## Data
+
+Every dataset in `data/raw/` is geospatial and covers Nashville or Tennessee. The same three subjects are provided both as GeoJSON and as Esri shapefiles.
+
+| Dataset | Features | Geometry | Notable properties |
+|---|---|---|---|
+| Nashville building permit applications | 5,812 | Point | `Permit__`, `Permit_Type_Description`, `Date_Issued`, `Const_Cost`, `Address` |
+| Public health clinics | 4 | Point | `ClinicName`, `Phone`, `Hours`, `Address` |
+| TN congressional districts | 9 | Polygon | `DISTRICT`, `NAME`, `POPULATION` |
+
+`data/raw/csv/TN_Congressional_Districts.csv` holds the district attribute table without geometry: `OBJECTID`, `DISTRICT`, `NAME`, `POPULATION`.
+
+Permits are the only large dataset, so the pipeline caps how many features it exports and draws (`permit_limit`, default 100). Processed output lands in `data/processed/`.
+
+## Running the pipeline
+
+From the repository root:
+
+```bash
+python -m src
+```
+
+Stages run in order, reading every path and parameter from `config/paths.ini`:
+
+| Stage | Module | What it does |
+|---|---|---|
+| Load | `data_processing.loader` | Reads the raw permits GeoJSON and the districts CSV |
+| Clean | `data_processing.cleaner` | Drops null and duplicate rows from the districts table |
+| Transform | `data_processing.transformer` | Filters permits by one property; skipped unless configured |
+| Export | `data_processing.export` | Writes processed permits and the cleaned districts CSV |
+| Visualize | `visualizations.folium_maps` | Builds the layered map |
+| Save | `visualizations.save_plots` | Writes the map to `reports/figures/` |
+
+Outputs:
+
+| Path | Content |
+|---|---|
+| `data/processed/geojson/Nashville_Building_Permit_Applications.geojson` | First `permit_limit` permit features after filtering |
+| `data/processed/csv/TN_Congressional_Districts.csv` | Cleaned districts table |
+| `reports/figures/nashville_map.html` | Interactive map |
+
+The map opens on Nashville with three switchable base layers (CartoDB Dark Matter, CartoDB Positron, OpenStreetMap) and three data layers that start hidden and are toggled from the layer control. Clicking a feature opens a popup: the district number, a clinic's name, address and hours, or a permit's type, entry date and construction cost.
+
+## Configuration
+
+Configuration lives in `config/`, not in the package. Paths are relative to the repository root.
+
+### `config/paths.ini`
+
+| Section | Key | Purpose |
+|---|---|---|
+| `[raw]` | `permits`, `clinics`, `districts`, `districts_csv` | Input files |
+| `[processed]` | `permits`, `districts_csv` | Processed data outputs |
+| `[reports]` | `map` | Map output |
+| `[parameters]` | `permit_limit` | Maximum permit features exported and drawn. Default `100` |
+| `[parameters]` | `permit_filter_property`, `permit_filter_value` | Keep only permits whose property equals this value. Both empty (the default) disables filtering |
+
+To run against a different configuration file:
+
+```python
+from src.__main__ import main
+main("path/to/other.ini")
+```
+
+### `config/logging.ini`
+
+Read by `utils.logging.setup_logging()`. Defines a console handler and a file handler writing to `sample.log`.
 
 ## Directory Structure
 
-This project follows a structured directory setup to separate various components, enhancing modularity, readability, and maintainability.
-
 ```plaintext
-data_visualization_project/
+data-visualizations/
+├── config/
+│   ├── logging.ini          # Logging configuration
+│   └── paths.ini            # Input/output paths and pipeline parameters
+│
 ├── data/
-│   ├── raw/            # Raw datasets, usually in CSV, JSON, or other formats
-│   ├── processed/      # Processed data ready for visualization (e.g. cleaned or aggregated data)
-│   └── external/       # External data files or reference datasets
+│   ├── raw/
+│   │   ├── csv/             # District attribute table
+│   │   ├── geojson/         # Permits, clinics, districts
+│   │   └── shapefiles/      # The same three subjects as Esri shapefiles
+│   └── processed/
+│       └── geojson/         # Pipeline output
 │
 ├── src/
-│   ├── __init__.py          # Initialization for the src package
-│   ├── config.ini           # Configuration settings for the project (paths, parameters)
+│   ├── __init__.py
+│   ├── __main__.py               # Pipeline entry point (python -m src)
+│   │
 │   ├── data_processing/
-│   │   ├── __init__.py      # Initialization for the data processing module
-│   │   ├── loader.py        # Script to load data (from files, APIs, databases)
-│   │   ├── cleaner.py       # Script to clean and preprocess raw data
-│   │   ├── transformer.py   # Script for transforming data (e.g. aggregating or filtering)
-│   │   └── export.py        # Export processed data for visualization
+│   │   ├── __init__.py
+│   │   ├── loader.py             # load(path) — reader chosen by file extension
+│   │   ├── cleaner.py            # Drop nulls and duplicates
+│   │   ├── transformer.py        # Filter GeoJSON features and GeoDataFrames
+│   │   ├── export.py             # export(data, path) — writer chosen by extension
+│   │   ├── csv_processing.py     # CSV reader/writer
+│   │   ├── geojson_processing.py # GeoJSON reader/writer and property inspection
+│   │   └── shapefile_processing.py  # Shapefile reader/writer
 │   │
 │   ├── visualizations/
-│   │   ├── __init__.py      # Initialization for the visualizations module
-│   │   ├── bar_charts.py    # Module for creating bar chart visualizations
-│   │   ├── line_plots.py    # Module for creating line plot visualizations
-│   │   ├── heatmaps.py      # Module for creating heatmaps
-│   │   └── save_plots.py    # Module to handle saving/exporting plots in desired formats
+│   │   ├── __init__.py
+│   │   ├── folium_maps.py        # Layered interactive maps
+│   │   ├── matplotlib_plots.py   # Histogram, scatter, line, boxplot
+│   │   ├── plotly_interactive.py # Plotly examples
+│   │   └── save_plots.py         # Save figures, plotly figures and maps
 │   │
-│   ├── utils/
-│   │   ├── __init__.py      # Initialization for the utils module
-│   │   ├── logging.py       # Logging utilities for tracking processes
-│   │   ├── helpers.py       # Helper functions used across modules
-│   │   └── plot_styles.py   # Custom styles or themes for visualizations
-│   │
-│   └── __main__.py          # Main script to run the project (e.g. workflow orchestration)
+│   └── utils/
+│       ├── __init__.py
+│       ├── config.py             # Read config/paths.ini
+│       ├── logging.py            # Configure logging from config/logging.ini
+│       ├── geo_utils.py          # CRS transforms
+│       ├── file_utils.py         # Text file helpers
+│       └── plot_styles.py        # Seaborn plot styling
 │
 ├── reports/
-│   ├── figures/             # Directory for saving generated figures
-│   └── summary/             # Summarized reports or insights generated
+│   ├── figures/             # Generated figures and maps
+│   └── summary/             # Summary reports
 │
-├── tests/
-│   ├── __init__.py                 # Initialization for the tests package
-│   ├── test_data_processing.py     # Tests for data processing module
-│   ├── test_visualizations.py      # Tests for visualization functions
-│   └── test_utils.py               # Tests for utility functions
+├── examples/
+│   └── startup_ages.py      # Standalone matplotlib example, synthetic data
 │
-├── notebooks/
-│   ├── exploratory_analysis.ipynb  # Jupyter Notebook for exploratory data analysis
-│   └── testing_visuals.ipynb       # Notebook for testing visualization styles and plots
+├── notebooks/               # Exploratory Jupyter notebooks
+├── tests/                   # Test package (see Planned)
 │
-├── .gitignore          # Git ignore file
-├── requirements.txt    # Python dependencies for the project
-└── README.md           # Project description and setup instructions
+├── example_map.html         # Superseded map output (see Planned)
+├── .gitignore
+├── requirements.txt
+├── LICENSE
+└── README.md
 ```
 
-## Directory Details
+Visualization modules are named after their rendering backend rather than the chart type, because the map work has no meaningful home under a chart-type layout.
 
-#### `data/`
-- **`raw/`**: Contains raw datasets in various formats <i>(e.g., CSV, JSON)</i> as originally collected.
-- **`processed/`**: Stores processed data, ready for visualization. Data here is typically cleaned and transformed.
-- **`external/`**: Holds any external data or reference files used in analysis.
+## Using the modules directly
 
-#### `src/`
-- `config.ini`: Where configuration settings such as file paths and parameters, should be set.
-- **`data_processing/`**: Responsible for data loading, cleaning, and transformation. Each module focuses on a specific aspect of data processing.
-  - `loader.py`: Handles data loading from various sources <i>(e.g., files, APIs)</i>.
-  - `cleaner.py`: Performs data cleaning, handling missing values, and data inconsistencies.
-  - `transformer.py`: Conducts data transformations, such as aggregations and filtering.
-  - `export.py`: Exports processed data for visualization.
-- **`visualizations/`**: Contains modules for different types of visualizations.
-  - `bar_charts.py`, `line_plots.py`, `heatmaps.py`: Specific modules for creating distinct types of visualizations.
-  - `save_plots.py`: Manages exporting and saving visualizations.
-- **utils/**: Utility scripts with general-purpose functions.
-  - `logging.py`: Provides logging functions for debugging and tracking project activity.
-  - `helpers.py`: Contains commonly used helper functions.
-  - `plot_styles.py`: Defines custom plot styles or themes.
-- **main.py**: Orchestrates the workflow, running data processing and visualization generation in sequence.
+`loader.load` and `export.export` dispatch on the file extension, so callers do not need to know which format module to reach for.
 
-### `reports/`
-- **`figures/`**: Stores generated visualizations.
-- **`summary/`**: Contains summary reports, such as markdown or text files with key insights.
+```python
+from src.data_processing.export import export
+from src.data_processing.loader import load
+from src.data_processing.transformer import filter_features_by_property
 
-### `tests/`
-- Contains unit tests to verify the accuracy of data processing and visualization modules.
-  - `test_data_processing.py`: Tests for data loading, cleaning, and transformation.
-  - `test_visualizations.py`: Tests for visualization functions.
-  - `test_utils.py`: Tests for utility functions.
+permits = load("data/raw/geojson/Nashville_Building_Permit_Applications.geojson")
+rehabs = filter_features_by_property(permits, "Permit_Type_Description", "Building Residential - Rehab")
+export(rehabs, "data/processed/geojson/rehabs.geojson", limit=50)
+```
 
-### `notebooks/`
-- **exploratory_analysis.ipynb**: Jupyter notebook for exploratory data analysis (EDA) to understand the dataset.
-- **testing_visuals.ipynb**: Notebook to test and preview visualization styles.
+| Extension | `load` returns | `export` accepts |
+|---|---|---|
+| `.csv` | `pandas.DataFrame` | `pandas.DataFrame` |
+| `.geojson` | `dict` (FeatureCollection) | `dict`; `limit` caps features written |
+| `.shp` | `geopandas.GeoDataFrame` | `geopandas.GeoDataFrame` |
+
+Any other extension raises `ValueError`. `export` creates parent directories as needed.
+
+Plot functions return their figure and display it by default. Pass `show=False` to save without opening a window:
+
+```python
+from src.visualizations.matplotlib_plots import plot_histogram
+from src.visualizations.save_plots import save_figure
+
+fig = plot_histogram(values, title="Construction cost", show=False)
+save_figure(fig, "reports/figures/cost.png")
+```
+
+`save_plots` also provides `save_plotly_figure` (HTML) and `save_map` (Folium). Each creates parent directories and returns the written path.
 
 ## Getting Started
 
-1. **Clone the Repository**:
+1. **Clone the repository**
+
    ```bash
    git clone <repository_url>
-   cd data_visualization_project
+   cd data-visualizations
    ```
 
-2. **Install Dependencies**:
-   Use the provided `requirements.txt` to install necessary packages.
+2. **Create a virtual environment and install dependencies**
+
    ```bash
+   python -m venv .venv
+   source .venv/bin/activate
    pip install -r requirements.txt
    ```
 
-3. **Run the Project**:
-   Execute the main script to run the complete workflow.
+   `geopandas`, `pyproj` and `shapely` are built on the GDAL, PROJ and GEOS C libraries. Current releases ship prebuilt wheels for common platforms, so `pip install` usually needs no system packages; if a build is attempted from source, install those libraries first (`brew install gdal proj geos`, or `apt-get install gdal-bin libgdal-dev proj-bin libgeos-dev`).
+
+   `requirements.txt` lists dependencies without version constraints, so a fresh install resolves to current releases.
+
+3. **Run the pipeline**
+
    ```bash
-   python src/main.py
+   python -m src
    ```
+
+## Notebooks and examples
+
+`notebooks/` holds exploratory Jupyter notebooks; only `us_population.ipynb` currently has content, and it uses synthetic population data rather than the geospatial datasets. `examples/startup_ages.py` is a standalone matplotlib chart of synthetic funding-round data, kept as a plotting reference and not part of the pipeline.
+
+## Planned
+
+Known gaps, none of them addressed yet. They are listed here so the sections above can be read as a description of what the repository actually does.
+
+- **Tests.** `tests/` contains placeholder modules only; every file is empty. Coverage for data processing, visualization and utility functions is tracked in [issue #4](../../issues/4), along with an import smoke test.
+- **Repository hygiene.** Whether generated data and reports belong in version control is undecided, so pipeline outputs currently show as untracked. `example_map.html` is a 5 MB map at the repository root, superseded by `reports/figures/nashville_map.html`.
+- **Plotly.** `visualizations/plotly_interactive.py` contains demonstration functions that load Plotly's sample datasets and display them. They do not return figures, so they cannot be passed to `save_plotly_figure`.
+- **Logging verbosity.** `config/logging.ini` sets the root logger to `DEBUG`. Third-party libraries imported after `setup_logging()` emit large volumes of debug output.
+- **Basemap tiles.** Folium warns that CartoDB basemap tiles now require an API key. The Dark Matter and Positron layers may not render without one; the OpenStreetMap layer is unaffected.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
