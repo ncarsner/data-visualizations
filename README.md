@@ -26,7 +26,7 @@ Every dataset in `data/raw/` is geospatial and covers Nashville or Tennessee. Th
 
 `data/raw/csv/TN_Congressional_Districts.csv` holds the district attribute table without geometry: `OBJECTID`, `DISTRICT`, `NAME`, `POPULATION`.
 
-Permits are the only large dataset, so the pipeline caps how many features it exports and draws (`permit_limit`, default 100). Processed output lands in `data/processed/`.
+Permits are the only large dataset, so the pipeline caps how many features it exports and draws (`permit_limit`, default 100). Processed output lands in `data/processed/`, which is not version-controlled; `data/raw/` is, so a fresh clone can run the pipeline without downloading anything.
 
 ## Running the pipeline
 
@@ -135,9 +135,8 @@ data-visualizations/
 │   └── startup_ages.py      # Standalone matplotlib example, synthetic data
 │
 ├── notebooks/               # Exploratory Jupyter notebooks
-├── tests/                   # Test package (see Planned)
+├── tests/                   # pytest suite
 │
-├── example_map.html         # Superseded map output (see Planned)
 ├── .gitignore
 ├── requirements.txt
 ├── LICENSE
@@ -209,14 +208,29 @@ save_figure(fig, "reports/figures/cost.png")
 
 ## Notebooks and examples
 
-`notebooks/` holds exploratory Jupyter notebooks; only `us_population.ipynb` currently has content, and it uses synthetic population data rather than the geospatial datasets. `examples/startup_ages.py` is a standalone matplotlib chart of synthetic funding-round data, kept as a plotting reference and not part of the pipeline.
+`notebooks/us_population.ipynb` plots synthetic US population data and is unrelated to the geospatial pipeline. `examples/startup_ages.py` is a standalone matplotlib chart of synthetic funding-round data, kept as a plotting reference. Neither is part of the pipeline.
+
+## Tests
+
+```bash
+pytest
+```
+
+The suite uses only the committed raw datasets and pytest's `tmp_path`, so it never writes into the working tree.
+
+| Module | Covers |
+|---|---|
+| `test_data_processing.py` | GeoJSON property inspection, filtering, cleaning, and `load`/`export` dispatch including unsupported extensions |
+| `test_utils.py` | CRS transforms against the Web Mercator closed form, file helpers, configuration loading |
+| `test_visualizations.py` | Plot functions returning figures, the three `save_plots` writers, map layers and popups |
+| `test_pipeline.py` | `main()` end to end: outputs written, `permit_limit` applied, filtering applied before the limit |
+| `test_imports.py` | Every module imports, and importing one writes no files |
 
 ## Planned
 
 Known gaps, none of them addressed yet. They are listed here so the sections above can be read as a description of what the repository actually does.
 
-- **Tests.** `tests/` contains placeholder modules only; every file is empty. Coverage for data processing, visualization and utility functions is tracked in [issue #4](../../issues/4), along with an import smoke test.
-- **Repository hygiene.** Whether generated data and reports belong in version control is undecided, so pipeline outputs currently show as untracked. `example_map.html` is a 5 MB map at the repository root, superseded by `reports/figures/nashville_map.html`.
+- **`get_distinct_count_per_property` changes return type.** Above 100 distinct values it returns the string `"Greater than 100 values"` in place of an `int`, so the dictionary it returns mixes types. A regression test pins the current behavior; fixing it is a breaking change.
 - **Plotly.** `visualizations/plotly_interactive.py` contains demonstration functions that load Plotly's sample datasets and display them. They do not return figures, so they cannot be passed to `save_plotly_figure`.
 - **Logging verbosity.** `config/logging.ini` sets the root logger to `DEBUG`. Third-party libraries imported after `setup_logging()` emit large volumes of debug output.
 - **Basemap tiles.** Folium warns that CartoDB basemap tiles now require an API key. The Dark Matter and Positron layers may not render without one; the OpenStreetMap layer is unaffected.
