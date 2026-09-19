@@ -1,8 +1,9 @@
 import math
+from pathlib import Path
 
 import pytest
 
-from src.utils.config import load_config
+from src.utils.config import REQUIRED_PATHS, ConfigurationError, load_config
 from src.utils.file_utils import (
     append_to_file,
     delete_file,
@@ -154,23 +155,139 @@ class TestFileUtils:
         delete_file(tmp_path / "never_existed.txt")
 
 
+ENV_EXAMPLE_PATHS = """
+RAW_PERMITS=data/raw/geojson/Nashville_Building_Permit_Applications.geojson
+RAW_CLINICS=data/raw/geojson/Public_Health_Clinics.geojson
+RAW_DISTRICTS=data/raw/geojson/TN_Congressional_Districts.geojson
+RAW_DISTRICTS_CSV=data/raw/csv/TN_Congressional_Districts.csv
+PROCESSED_PERMITS=out/permits.geojson
+PROCESSED_DISTRICTS_CSV=out/districts.csv
+REPORTS_MAP=out/map.html
+"""
+
+
+@pytest.fixture
+def env_file(tmp_path, clean_env):
+    """Write a .env in tmp_path; returns a callable taking extra lines."""
+
+    def write(extra=""):
+        path = tmp_path / ".env"
+        path.write_text(ENV_EXAMPLE_PATHS + extra)
+        return path
+
+    return write
+
+
 class TestLoadConfig:
-    def test_reads_sections_and_values(self, tmp_path):
-        path = tmp_path / "paths.ini"
-        path.write_text("[parameters]\npermit_limit = 25\n")
+    def test_reads_every_path(self, env_file):
+        config = load_config(env_file())
 
-        config = load_config(path)
+        assert config.raw_permits == Path(
+            "data/raw/geojson/Nashville_Building_Permit_Applications.geojson"
+        )
+        assert config.raw_clinics == Path("data/raw/geojson/Public_Health_Clinics.geojson")
+        assert config.raw_districts_csv == Path("data/raw/csv/TN_Congressional_Districts.csv")
+        assert config.processed_permits == Path("out/permits.geojson")
+        assert config.reports_map == Path("out/map.html")
 
-        assert config["parameters"].getint("permit_limit") == 25
+    def test_paths_are_path_objects(self, env_file):
+        config = load_config(env_file())
 
-    def test_missing_file_raises(self, tmp_path):
-        with pytest.raises(FileNotFoundError):
-            load_config(tmp_path / "absent.ini")
+        assert all(
+            isinstance(getattr(config, field), Path) for field in REQUIRED_PATHS
+        )
 
-    def test_the_committed_config_has_the_keys_the_pipeline_reads(self, repo_root):
-        config = load_config(repo_root / "config" / "paths.ini")
+    def test_permit_limit_defaults_to_100(self, env_file):
+        assert load_config(env_file()).permit_limit == 100
 
-        assert {"permits", "clinics", "districts", "districts_csv"} <= set(config["raw"])
-        assert {"permits", "districts_csv"} <= set(config["processed"])
-        assert "map" in config["reports"]
-        assert config["parameters"].getint("permit_limit") > 0
+    def test_permit_limit_is_read_from_the_file(self, env_file):
+        assert load_config(env_file("PERMIT_LIMIT=25\n")).permit_limit == 25
+
+    def test_blank_permit_limit_falls_back_to_the_default(self, env_file):
+        assert load_config(env_file("PERMIT_LIMIT=\n")).permit_limit == 100
+
+    @pytest.mark.parametrize("value", ["abc", "1.5", "ten"])
+    def test_non_integer_permit_limit_raises(self, env_file, value):
+        with pytest.raises(ConfigurationError, match="PERMIT_LIMIT must be an integer"):
+            load_config(env_file(f"PERMIT_LIMIT={value}\n"))
+
+    @pytest.mark.parametrize("value", ["0", "-5"])
+    def test_permit_limit_below_one_raises(self, env_file, value):
+        with pytest.raises(ConfigurationError, match="at least 1"):
+            load_config(env_file(f"PERMIT_LIMIT={value}\n"))
+
+    def test_missing_required_path_raises_naming_it(self, tmp_path, clean_env):
+        path = tmp_path / ".env"
+        path.write_text(
+            ENV_EXAMPLE_PATHS.replace(
+                "RAW_CLINICS=data/raw/geojson/Public_Health_Clinics.geojson", ""
+            )
+        )
+
+        with pytest.raises(ConfigurationError, match="RAW_CLINICS"):
+            load_config(path)
+
+    def test_absent_env_file_raises_with_a_usable_message(self, tmp_path, clean_env):
+        with pytest.raises(ConfigurationError, match="Copy .env.example"):
+            load_config(tmp_path / "absent.env")
+
+    def test_environment_variables_win_over_the_file(self, env_file, monkeypatch):
+        monkeypatch.setenv("PERMIT_LIMIT", "7")
+        monkeypatch.setenv("REPORTS_MAP", "elsewhere/map.html")
+
+        config = load_config(env_file("PERMIT_LIMIT=25\n"))
+
+        assert config.permit_limit == 7
+        assert config.reports_map == Path("elsewhere/map.html")
+
+
+class TestPermitFilter:
+    def test_unset_means_no_filtering(self, env_file):
+        assert load_config(env_file()).permit_filter is None
+
+    def test_both_halves_set_returns_the_pair(self, env_file):
+        config = load_config(
+            env_file("PERMIT_FILTER_PROPERTY=Permit_Type_Description\nPERMIT_FILTER_VALUE=Rehab\n")
+        )
+
+        assert config.permit_filter == ("Permit_Type_Description", "Rehab")
+
+    @pytest.mark.parametrize(
+        "extra",
+        [
+            "PERMIT_FILTER_PROPERTY=Permit_Type_Description\n",
+            "PERMIT_FILTER_VALUE=Rehab\n",
+        ],
+    )
+    def test_half_a_filter_is_ignored(self, env_file, extra):
+        """Filtering on a property with no value would drop every feature."""
+        assert load_config(env_file(extra)).permit_filter is None
+
+    def test_whitespace_is_stripped(self, env_file):
+        config = load_config(
+            env_file("PERMIT_FILTER_PROPERTY=  \nPERMIT_FILTER_VALUE=Rehab\n")
+        )
+
+        assert config.permit_filter is None
+
+
+class TestCommittedEnvExample:
+    """.env.example must stay usable, since the README tells readers to copy it."""
+
+    def test_it_describes_a_runnable_pipeline(self, repo_root, clean_env, monkeypatch):
+        monkeypatch.chdir(repo_root)
+
+        config = load_config(repo_root / ".env.example")
+
+        assert config.raw_permits.is_file()
+        assert config.raw_clinics.is_file()
+        assert config.raw_districts.is_file()
+        assert config.raw_districts_csv.is_file()
+        assert config.permit_limit > 0
+        assert config.permit_filter is None
+
+    def test_it_sets_every_required_variable(self, repo_root):
+        text = (repo_root / ".env.example").read_text()
+
+        for name in REQUIRED_PATHS.values():
+            assert f"{name}=" in text

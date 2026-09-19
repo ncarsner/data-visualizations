@@ -1,11 +1,16 @@
 """End-to-end tests for `python -m src`, run against the committed datasets."""
 
 import json
+import os
+import subprocess
+import sys
 
 import pandas as pd
 import pytest
 
 from src.__main__ import main
+
+from .conftest import CONFIG_VARIABLES
 
 
 @pytest.fixture
@@ -18,30 +23,23 @@ def pipeline(tmp_path, repo_root, monkeypatch):
     """
 
     def run(permit_limit=5, filter_property="", filter_value=""):
-        config = tmp_path / "paths.ini"
-        config.write_text(
+        env_file = tmp_path / ".env"
+        env_file.write_text(
             f"""
-[raw]
-permits = data/raw/geojson/Nashville_Building_Permit_Applications.geojson
-clinics = data/raw/geojson/Public_Health_Clinics.geojson
-districts = data/raw/geojson/TN_Congressional_Districts.geojson
-districts_csv = data/raw/csv/TN_Congressional_Districts.csv
-
-[processed]
-permits = {tmp_path / "permits.geojson"}
-districts_csv = {tmp_path / "districts.csv"}
-
-[reports]
-map = {tmp_path / "figures" / "map.html"}
-
-[parameters]
-permit_limit = {permit_limit}
-permit_filter_property = {filter_property}
-permit_filter_value = {filter_value}
+RAW_PERMITS=data/raw/geojson/Nashville_Building_Permit_Applications.geojson
+RAW_CLINICS=data/raw/geojson/Public_Health_Clinics.geojson
+RAW_DISTRICTS=data/raw/geojson/TN_Congressional_Districts.geojson
+RAW_DISTRICTS_CSV=data/raw/csv/TN_Congressional_Districts.csv
+PROCESSED_PERMITS={tmp_path / "permits.geojson"}
+PROCESSED_DISTRICTS_CSV={tmp_path / "districts.csv"}
+REPORTS_MAP={tmp_path / "figures" / "map.html"}
+PERMIT_LIMIT={permit_limit}
+PERMIT_FILTER_PROPERTY={filter_property}
+PERMIT_FILTER_VALUE={filter_value}
 """
         )
         monkeypatch.chdir(repo_root)
-        main(str(config))
+        main(str(env_file))
         return {
             "permits": tmp_path / "permits.geojson",
             "districts": tmp_path / "districts.csv",
@@ -102,3 +100,27 @@ def test_the_map_draws_the_exported_permits(pipeline):
 def test_output_directories_are_created(pipeline):
     outputs = pipeline()
     assert outputs["map"].parent.is_dir()
+
+
+class TestUnconfiguredRun:
+    """`python -m src` with nothing configured is the first-run experience."""
+
+    def test_it_exits_with_a_message_and_no_traceback(self, tmp_path, repo_root):
+        """Run from an empty directory so no .env is found."""
+        result = subprocess.run(
+            [sys.executable, "-m", "src"],
+            cwd=tmp_path,
+            env={
+                key: value
+                for key, value in os.environ.items()
+                if key not in CONFIG_VARIABLES
+            }
+            | {"PYTHONPATH": str(repo_root)},
+            capture_output=True,
+            text=True,
+        )
+
+        assert result.returncode != 0
+        assert "Configuration error" in result.stderr
+        assert "Copy .env.example" in result.stderr
+        assert "Traceback" not in result.stderr

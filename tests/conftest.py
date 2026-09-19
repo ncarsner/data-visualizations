@@ -10,6 +10,29 @@ import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
+# Everything load_config reads. Cleared before each test so the suite cannot
+# pick up a developer's exported variables, and so values that python-dotenv
+# writes into os.environ do not leak from one test into the next.
+CONFIG_VARIABLES = (
+    "RAW_PERMITS",
+    "RAW_CLINICS",
+    "RAW_DISTRICTS",
+    "RAW_DISTRICTS_CSV",
+    "PROCESSED_PERMITS",
+    "PROCESSED_DISTRICTS_CSV",
+    "REPORTS_MAP",
+    "PERMIT_LIMIT",
+    "PERMIT_FILTER_PROPERTY",
+    "PERMIT_FILTER_VALUE",
+)
+
+
+@pytest.fixture(autouse=True)
+def clean_env(monkeypatch):
+    """Run every test against an environment that configures nothing."""
+    for name in CONFIG_VARIABLES:
+        monkeypatch.delenv(name, raising=False)
+
 
 @pytest.fixture(scope="session")
 def repo_root():
