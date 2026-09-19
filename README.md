@@ -30,13 +30,15 @@ Permits are the only large dataset, so the pipeline caps how many features it ex
 
 ## Running the pipeline
 
-From the repository root:
+From the repository root, after copying `.env.example` to `.env`:
 
 ```bash
-python -m src
+uv run python -m src
 ```
 
-Stages run in order, reading every path and parameter from `config/paths.ini`:
+`uv run` resolves the environment first, so it needs no activation step. Inside an activated environment, `python -m src` does the same thing.
+
+Stages run in order, reading every path and parameter from the environment:
 
 | Stage | Module | What it does |
 |---|---|---|
@@ -59,24 +61,31 @@ The map opens on Nashville with three switchable base layers (CartoDB Dark Matte
 
 ## Configuration
 
-Configuration lives in `config/`, not in the package. Paths are relative to the repository root.
+The pipeline is configured by environment variables, read from the process environment and falling back to a `.env` file in the repository root. Real environment variables win, so a shell export or a CI secret overrides the file without editing it.
 
-### `config/paths.ini`
+`.env.example` is the committed template; copy it to `.env`. Paths are relative to the working directory, which `python -m src` expects to be the repository root.
 
-| Section | Key | Purpose |
+| Variable | Required | Purpose |
 |---|---|---|
-| `[raw]` | `permits`, `clinics`, `districts`, `districts_csv` | Input files |
-| `[processed]` | `permits`, `districts_csv` | Processed data outputs |
-| `[reports]` | `map` | Map output |
-| `[parameters]` | `permit_limit` | Maximum permit features exported and drawn. Default `100` |
-| `[parameters]` | `permit_filter_property`, `permit_filter_value` | Keep only permits whose property equals this value. Both empty (the default) disables filtering |
+| `RAW_PERMITS`, `RAW_CLINICS`, `RAW_DISTRICTS`, `RAW_DISTRICTS_CSV` | Yes | Input files |
+| `PROCESSED_PERMITS`, `PROCESSED_DISTRICTS_CSV` | Yes | Processed data outputs |
+| `REPORTS_MAP` | Yes | Map output |
+| `PERMIT_LIMIT` | No | Maximum permit features exported and drawn. Default `100` |
+| `PERMIT_FILTER_PROPERTY`, `PERMIT_FILTER_VALUE` | No | Keep only permits whose property equals this value. Setting only one leaves filtering off |
 
-To run against a different configuration file:
+There are no built-in defaults for the paths. A run with nothing configured exits with a message naming the variables it needs rather than reading or writing somewhere unexpected:
 
-```python
-from src.__main__ import main
-main("path/to/other.ini")
 ```
+Configuration error: Missing required configuration: RAW_PERMITS, ... Copy .env.example to .env and edit it, or set these as environment variables.
+```
+
+Overriding a single value for one run needs no file edit:
+
+```bash
+PERMIT_LIMIT=500 uv run python -m src
+```
+
+`load_config()` returns a frozen `Config` dataclass with `Path` attributes, so callers get `config.raw_permits`, not string lookups. To read a different file, pass its path: `main("deploy/.env.staging")`.
 
 ### `config/logging.ini`
 
@@ -87,8 +96,7 @@ Read by `utils.logging.setup_logging()`. Defines a console handler and a file ha
 ```plaintext
 data-visualizations/
 ├── config/
-│   ├── logging.ini          # Logging configuration
-│   └── paths.ini            # Input/output paths and pipeline parameters
+│   └── logging.ini          # Logging configuration
 │
 ├── data/
 │   ├── raw/
@@ -121,7 +129,7 @@ data-visualizations/
 │   │
 │   └── utils/
 │       ├── __init__.py
-│       ├── config.py             # Read config/paths.ini
+│       ├── config.py             # Read configuration from the environment
 │       ├── logging.py            # Configure logging from config/logging.ini
 │       ├── geo_utils.py          # CRS transforms
 │       ├── file_utils.py         # Text file helpers
@@ -137,8 +145,10 @@ data-visualizations/
 ├── notebooks/               # Exploratory Jupyter notebooks
 ├── tests/                   # pytest suite
 │
+├── .env.example             # Configuration template; copy to .env
 ├── .gitignore
-├── requirements.txt
+├── pyproject.toml           # Project metadata and dependencies
+├── uv.lock                  # Exact resolved versions
 ├── LICENSE
 └── README.md
 ```
@@ -188,22 +198,30 @@ save_figure(fig, "reports/figures/cost.png")
    cd data-visualizations
    ```
 
-2. **Create a virtual environment and install dependencies**
+2. **Install dependencies**
+
+   The project uses [uv](https://docs.astral.sh/uv/). It creates the virtual environment, installs the exact versions in `uv.lock`, and fetches a suitable Python if none is present:
 
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt
+   uv sync
    ```
 
-   `geopandas`, `pyproj` and `shapely` are built on the GDAL, PROJ and GEOS C libraries. Current releases ship prebuilt wheels for common platforms, so `pip install` usually needs no system packages; if a build is attempted from source, install those libraries first (`brew install gdal proj geos`, or `apt-get install gdal-bin libgdal-dev proj-bin libgeos-dev`).
+   Add `--group dev` for pytest and JupyterLab. Without uv, `pip install -e .` reads the same dependencies from `pyproject.toml`, resolving them fresh rather than from the lock file.
 
-   `requirements.txt` lists dependencies without version constraints, so a fresh install resolves to current releases.
+   `geopandas`, `pyproj` and `shapely` are built on the GDAL, PROJ and GEOS C libraries. Current releases ship prebuilt wheels for common platforms, so installation usually needs no system packages; if a build is attempted from source, install those libraries first (`brew install gdal proj geos`, or `apt-get install gdal-bin libgdal-dev proj-bin libgeos-dev`).
 
-3. **Run the pipeline**
+3. **Create your configuration**
 
    ```bash
-   python -m src
+   cp .env.example .env
+   ```
+
+   The defaults in `.env.example` point at the committed datasets, so the copy is runnable as-is. `.env` is not version-controlled.
+
+4. **Run the pipeline**
+
+   ```bash
+   uv run python -m src
    ```
 
 ## Notebooks and examples
@@ -213,17 +231,17 @@ save_figure(fig, "reports/figures/cost.png")
 ## Tests
 
 ```bash
-pytest
+uv run pytest
 ```
 
-The suite uses only the committed raw datasets and pytest's `tmp_path`, so it never writes into the working tree.
+The suite uses only the committed raw datasets and pytest's `tmp_path`, so it never writes into the working tree. Configuration variables are cleared before each test, so a populated `.env` on your machine cannot change the result.
 
 | Module | Covers |
 |---|---|
 | `test_data_processing.py` | GeoJSON property inspection, filtering, cleaning, and `load`/`export` dispatch including unsupported extensions |
-| `test_utils.py` | CRS transforms against the Web Mercator closed form, file helpers, configuration loading |
+| `test_utils.py` | CRS transforms against the Web Mercator closed form, file helpers, configuration from the environment and from `.env` |
 | `test_visualizations.py` | Plot functions returning figures, the three `save_plots` writers, map layers and popups |
-| `test_pipeline.py` | `main()` end to end: outputs written, `permit_limit` applied, filtering applied before the limit |
+| `test_pipeline.py` | `main()` end to end: outputs written, `PERMIT_LIMIT` applied, filtering applied before the limit, and an unconfigured run exiting with a message |
 | `test_imports.py` | Every module imports, and importing one writes no files |
 
 ## Planned
@@ -232,7 +250,7 @@ Known gaps, none of them addressed yet. They are listed here so the sections abo
 
 - **`get_distinct_count_per_property` changes return type.** Above 100 distinct values it returns the string `"Greater than 100 values"` in place of an `int`, so the dictionary it returns mixes types. A regression test pins the current behavior; fixing it is a breaking change.
 - **Plotly.** `visualizations/plotly_interactive.py` contains demonstration functions that load Plotly's sample datasets and display them. They do not return figures, so they cannot be passed to `save_plotly_figure`.
-- **Logging verbosity.** `config/logging.ini` sets the root logger to `DEBUG`. Third-party libraries imported after `setup_logging()` emit large volumes of debug output.
+- **Logging verbosity.** `config/logging.ini` sets the root logger to `DEBUG`. A pipeline run is unaffected, because its imports all happen before `setup_logging()`, but any library imported afterwards — in a notebook or a script calling `setup_logging()` first — emits thousands of debug lines.
 - **Basemap tiles.** Folium warns that CartoDB basemap tiles now require an API key. The Dark Matter and Positron layers may not render without one; the OpenStreetMap layer is unaffected.
 
 ## License
