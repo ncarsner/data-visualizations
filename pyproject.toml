@@ -1,0 +1,34 @@
+[project]
+name = "data-visualizations"
+version = "0.1.0"
+description = "Processing and mapping of public geospatial datasets for Nashville and Tennessee"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+    "folium>=0.20",
+    "geopandas>=1.1",
+    "matplotlib>=3.10",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "plotly>=6.0",
+    "pyproj>=3.7",
+    "python-dotenv>=1.0",
+    "seaborn>=0.13",
+    "shapely>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.0",
+    "pytest>=8.0",
+]
+
+[tool.uv]
+# The project is run in place with `uv run python -m src`; there is no
+# distribution to build, so uv manages the environment without installing
+# the source tree into it.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
