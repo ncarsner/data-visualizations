@@ -13,6 +13,8 @@ Icon options:
     'heart'
 """
 
+import os
+
 import folium
 
 # Most populous US cities, plus Nashville, as [latitude, longitude]
@@ -50,9 +52,10 @@ def build_map(districts, clinics, permits, location=None, zoom_start=14):
     Data layers start hidden and are toggled from the layer control.
 
     Parameters:
-    districts (str or dict): Congressional districts; popups show DISTRICT.
-    clinics (str or dict): Public health clinics; popups show ClinicName, Address, Hours.
-    permits (str or dict): Building permit applications; popups show
+    districts (path-like or dict): Congressional districts; popups show DISTRICT.
+    clinics (path-like or dict): Public health clinics; popups show ClinicName,
+        Address, Hours.
+    permits (path-like or dict): Building permit applications; popups show
         Permit_Type_Description, Date_Entered, Const_Cost.
     location (list): [latitude, longitude] map center. Default is Nashville, TN.
     zoom_start (int): Initial zoom level. Default is 14.
@@ -62,6 +65,10 @@ def build_map(districts, clinics, permits, location=None, zoom_start=14):
     """
     if location is None:
         location = cities["Nashville, TN"]
+
+    districts, clinics, permits = (
+        _as_geojson_source(dataset) for dataset in (districts, clinics, permits)
+    )
 
     m = folium.Map(location=location, zoom_start=zoom_start, tiles=None)
 
@@ -109,3 +116,15 @@ def build_map(districts, clinics, permits, location=None, zoom_start=14):
 
     folium.LayerControl().add_to(m)
     return m
+
+
+def _as_geojson_source(dataset):
+    """
+    Normalize a dataset for folium.GeoJson.
+
+    folium reads a file path only as a str; a Path is mistaken for data with
+    no geometry. Dictionaries pass through untouched.
+    """
+    if isinstance(dataset, os.PathLike):
+        return os.fspath(dataset)
+    return dataset

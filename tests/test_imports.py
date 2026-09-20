@@ -8,7 +8,10 @@ was caught until someone tried to run the project.
 """
 
 import importlib
+import os
 import pkgutil
+import subprocess
+import sys
 
 import pytest
 
@@ -32,11 +35,25 @@ def test_module_imports(module_name):
     importlib.import_module(module_name)
 
 
-def test_importing_a_module_writes_no_files(tmp_path, monkeypatch):
-    """Import must not execute example code against the filesystem."""
-    monkeypatch.chdir(tmp_path)
+def test_importing_a_module_writes_no_files(tmp_path, repo_root):
+    """
+    Import must not execute example code against the filesystem.
 
-    for module_name in MODULES:
-        importlib.reload(importlib.import_module(module_name))
+    Run in a subprocess from an empty directory: reloading the modules in
+    process would rebind the classes other tests hold references to, and
+    importing from elsewhere is what catches work done at import time
+    against a relative path.
+    """
+    source = "import importlib\n" + "".join(
+        f"importlib.import_module({name!r})\n" for name in MODULES
+    )
+
+    subprocess.run(
+        [sys.executable, "-c", source],
+        cwd=tmp_path,
+        env={**os.environ, "PYTHONPATH": str(repo_root)},
+        check=True,
+        capture_output=True,
+    )
 
     assert list(tmp_path.iterdir()) == []
